@@ -7,7 +7,7 @@ You quickly understand that to thrive in this environment, you need to build bon
 ## 🎯 Mission
 Your mission, should you choose to accept it, is to make it possible for your fellow students to join as members of your DAO. You might not know it yet, but you need them. Some of them might also share your vision and want to join you on your journey.
 
-To help you get started, in [main.mo](./main.mo) we've defined:
+To help you get started, we define differnet types:
 - A new type `Member` that will represent a student who is a member of your DAO. 
 ```motoko
 type Member = {
