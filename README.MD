@@ -1,6 +1,6 @@
 # Motoko Bootcamp - Embark in the Web3 revolution! 
 ## Prerequisites
-Make sure to watch the [Kick-Off Ceremony]() to get started with the bootcamp. 
+Make sure to watch the [Kick-Off Ceremony](https://www.youtube.com/watch?v=V021zFyBtiU) to get started with the bootcamp. 
 
 ## How to get started?
 Start with the [first level](./levels/level_1/README.MD) and follow the instructions.
