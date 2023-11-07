@@ -39,9 +39,9 @@ Before we implement the `createProposal` function, we need to define the `create
 - `NotEnoughTokens`: Represents the case when a member doesn't have enough tokens to create a proposal.
 
 #### Task 3.3: Define the `createProposalResult` type
-To improve clarity and readability, we will define a `createProposalResult` type that is a `Result` type with the following `Err` and `Ok` types:
-- `Err`: The `createProposalErr` type.
-- `Ok`: The `createProposalOk` type.
+To improve clarity and readability, we will define a `createProposalResult` type that is a `Result` type with the following `err` and `ok` types:
+- `err`: The `createProposalErr` type.
+- `ok`: The `createProposalOk` type.
 
 #### Task 3.4: Implement the `createProposal` function
 The `createProposal` function should:
@@ -87,9 +87,9 @@ Before we implement the `vote` function, we need to define the `voteOk` type. Th
 - `ProposalOpen`: Represents the case when a proposal is still open for voting.
 
 ### Task7 5.3: Define the `voteResult` type
-To improve clarity and readability, we will define a `voteResult` type that is a `Result` type with the following `Err` and `Ok` types:
-- `Err`: The `voteErr` type.
-- `Ok`: The `voteOk` type.
+To improve clarity and readability, we will define a `voteResult` type that is a `Result` type with the following `err` and `ok` types:
+- `err`: The `voteErr` type.
+- `ok`: The `voteOk` type.
 
 ### Task 5.4: Implement the `vote` function
 The `vote` function should:
