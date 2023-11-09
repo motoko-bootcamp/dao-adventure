@@ -13,7 +13,7 @@ You are here to find out. It's time to understand the importance of economic str
 ## 🎯 Mission
 Your mission, should you choose to accept it, is to implement a token that will be used for your DAO. <br/>
 
-To help you get started, in [main.mo](./main.mo) we've we've introduced the concept of accounts and subaccounts. Here's what you need to know:
+To help you get started, in [main.mo](../../src/main.mo) we've we've introduced the concept of accounts and subaccounts. Here's what you need to know:
 
 1. **Principal and Subaccount**: A principal can possess multiple accounts. Each of these accounts is uniquely identified by a 32-byte string termed as a 'subaccount'. Thus, an individual account is represented by a combination of a principal and its corresponding subaccount.
 2. **Default Subaccount**: If every byte in a subaccount string is set to '0', it designates that account as the default account for the principal.
