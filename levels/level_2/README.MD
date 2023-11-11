@@ -1,13 +1,13 @@
 # Level 2 - Building bonds
 ## Introduction
-After a few days at the Motoko Academy, you realize that the power of the institution is not in the code or books but in it's people. Everywhere you look you see students having intense and passionate conversation. Some are even brainstorming and coding together. The atmosphere is electric and you can feel the energy in the air.
+After a few days at the Motoko Academy, you realize that the power of the institution is not in the code or books but in its people. Everywhere you look you see students having intense and passionate conversations. Some are even brainstorming and coding together. The atmosphere is electric and you can feel the energy in the air.
 
 You quickly understand that to thrive in this environment, you need to build bonds with your fellow students. You need to find your tribe.
 
 ## 🎯 Mission
 Your mission, should you choose to accept it, is to make it possible for your fellow students to join as members of your DAO. You might not know it yet, but you need them. Some of them might also share your vision and want to join you on your journey.
 
-To help you get started, we define differnet types:
+To help you get started, we define different types:
 - A new type `Member` that will represent a student who is a member of your DAO. 
 ```motoko
 type Member = {
@@ -48,7 +48,7 @@ The `updateMember` function should:
 - Take a `member` of type `Member` as a parameter
 - Check if the `caller` is a member of your DAO. 
     - If not, return an error message of type `Text` wrapped in `Err` indicating that the `caller` is not a member.
-    - If so, update the `member` in the `members` hashmap with the `caller` as the key and return nothings wrapped in `Ok`.
+    - If so, update the `member` in the `members` hashmap with the `caller` as the key and return nothing wrapped in `Ok`.
 ```motoko
 updateMember : shared (member : Member) -> async Result<(),Text>;
 ```
@@ -70,7 +70,7 @@ The `removeMember` function should:
 - Take a `principal` of type `Principal` as a parameter
 - Check if the `caller` is a member of your DAO. 
     - If not, return an error message of type `Text` wrapped in `Err` indicating that the `caller` is not a member.
-    - If so, remove the `member` from the `members` hashmap with the `caller` as the key and return nothings wrapped in `Ok`.
+    - If so, remove the `member` from the `members` hashmap with the `caller` as the key and return nothing wrapped in `Ok`.
 ```motoko
 removeMember : shared (principal : Principal) -> async Result<(),Text>;
 ```
@@ -90,8 +90,8 @@ actor {
 ## 📚 Resources
 | Name | Type | URL | Description |
 | ---- | ---- | --- | ----------- |
-| Datastructures | Lesson | [Chapter 6](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-6/CHAPTER-6.MD) | Learn about common datastructures in Motoko and how to use them - a must read! |
+| Datastructures | Lesson | [Chapter 6](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-6/CHAPTER-6.MD) | Learn about common data structures in Motoko and how to use them - a must read! |
 | Non-Primitives Types  | Lesson | [Chapter 7](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-7/CHAPTER-7.MD) | Learn about non-primitive types in Motoko such as Tuples, Objects and Variants  | 
-| Advanced Types  | Lesson | [Chapter 8](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-8/CHAPTER-8.MD) | Discover more advanced types such as Optional, Generic or Shared types |
+| Advanced Types  | Lesson | [Chapter 8](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-8/CHAPTER-8.MD) | Discover more advanced types such as Optional, Generic, or Shared types |
 | Result  | Documentation | [Base Library - Result](https://internetcomputer.org/docs/current/motoko/main/base/Result) | The official documentation for the `Result` library in Motoko |
 | HashMap  | Documentation | [Base Library - HashMap](https://internetcomputer.org/docs/current/motoko/main/base/HashMap) | The official documentation for the `HashMap` library in Motoko |
