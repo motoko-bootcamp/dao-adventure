@@ -14,28 +14,24 @@ actor class DAO() = this {
     // LEVEL #1 //
     /////////////
 
-    var manifesto : Text = "Manifesto";
-    let goals = Buffer.Buffer<Text>(0);
-
     public shared query func getName() : async Text {
-        return "DAO";
+        return "Not implemented";
     };
 
     public shared query func getManifesto() : async Text {
-        return manifesto;
+        return "Not implemented"
     };
 
     public func setManifesto(newManifesto : Text) : async () {
-        manifesto := newManifesto;
         return;
     };
 
     public func addGoal(newGoal : Text) : async () {
-        goals.add(newGoal);
+        return;
     };
 
     public shared query func getGoals() : async [Text] {
-        return Buffer.toArray(goals);
+        return []
     };
 
     ///////////////
@@ -51,15 +47,7 @@ actor class DAO() = this {
     let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
 
     public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
-        switch (dao.get(caller)) {
-            case (?member) {
-                return #err("Already a member");
-            };
-            case (null) {
-                dao.put(caller, member);
-                return #ok(());
-            };
-        };
+        return #err("Not implemented");
     };
 
     public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
