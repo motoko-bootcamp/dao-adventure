@@ -2,13 +2,13 @@
 
 <p> <img src="./assets/build_a_dao_in_seven_days.jpeg" alt="Build" /> </p>
 
-## How to get started?
+## How to get started? 🚀
 
 - Make sure to join the [Motoko Bootcamp Discord](https://discord.gg/uAvPEZtD4e) to get help and support from our community.
 - Start this Codespaces by clicking on the green button "Code" and then "Open with Codespaces".
 - Watch [our video to learn how to get started with Motoko Bootcamp](https://www.youtube.com/watch?v=Z3Q0s7jYgNA).
 
-## How to navigate this repository?
+## How to navigate this repository? 🧭
 
 This repository contains a variety of resources, each serving a specific purpose. Here is a comprehensive list of the resources available, along with a brief explanation of each:
 
@@ -47,7 +47,7 @@ Head over to the **submit** section and submit the id of the canister you've dep
 
 Once you've completed all the levels, you'll be able to claim your Diploma in the **Diploma** section.
 
-## Useful links
+## Useful links 🔗
 
 - [Website](https://www.motokobootcamp.com/)
 - [Discord](https://discord.gg/uAvPEZtD4e)
@@ -58,6 +58,6 @@ Once you've completed all the levels, you'll be able to claim your Diploma in th
 - [Telegram](https://t.me/+pwW_RfcXsscyMTQ0)
 - [OpenChat](https://oc.app/community/kvmak-aaaaa-aaaar-atmsq-cai/channel/296950142123807371690206543790609462636/?ref=lfwpr-yyaaa-aaaaf-abvzq-cai)
 
-## Join us for the next edition of Motoko Bootcamp
+## Join us for the next edition 🏕️
 
 We host monthly editions of Motoko Bootcamp. This is a place to brainstorm, collaborate and build the future of DAOs -and the Internet Computer. Join us for the next edition of Motoko Bootcamp by registering through our [website](https://www.motokobootcamp.com/).
