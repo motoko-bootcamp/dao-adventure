@@ -1,0 +1,9 @@
+{
+  "id": "icp-motoko",
+  "version": "1.0.0",
+  "name": "Internet Computer - Motoko Dev Container",
+  "description": "Get started building decentralized applications on the Internet Computer with Motoko",
+  "documentationURL": "https://github.com/Code-and-State/icp-dev-containers",
+  "licenseURL": "https://github.com/Code-and-State/icp-dev-containers/blob/main/LICENSE.MD",
+  "platforms": ["Any"]
+}

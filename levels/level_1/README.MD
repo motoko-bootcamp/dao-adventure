@@ -1,4 +1,4 @@
-# Level 1 - What is your dream?
+# Level 1 - What is your dream? 
 ## Introduction
 "**Welcome to the Motoko Academy - we are thrilled to have you here!**" As you stand at the entrance, a large luminous hologram greets you.
 
