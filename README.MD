@@ -1,6 +1,6 @@
 # Motoko Bootcamp - Join Web3 revolution!
 
-<p> <img src="./assets/build_a_dao_in_seven_days.jpeg" alt="Build" width="500"/> </p>
+<p> <img src="./assets/build_a_dao_in_seven_days.jpeg" alt="Build" /> </p>
 
 ## How to get started?
 
