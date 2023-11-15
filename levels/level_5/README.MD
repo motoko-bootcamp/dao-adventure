@@ -18,7 +18,7 @@ The end result should look something like this:
 
 ## ✏️ Tasks
 
-1. Select a logo for the DAO. You will need to find a logo that is available as an SVG file. You can use websites like [FlatIcon](https://www.flaticon.com/fr/).
+1. Select a logo for the DAO. You will need to find a logo that is available as an SVG file. You can use a website like [FlatIcon](https://www.flaticon.com/fr/).
 
 > SVG stands for Scalable Vector Graphics. We will use SVGs because they are basically text files that carry vector information about visuals. This means we don't have to worry about uploading any asset to our canister, we can simply copy the SVG file and paste it directly in our code.
 

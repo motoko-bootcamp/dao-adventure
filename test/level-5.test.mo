@@ -21,3 +21,5 @@ type CreateProposalResult = Types.CreateProposalResult;
 type VoteOk = Types.VoteOk;
 type VoteErr = Types.VoteErr;
 type VoteResult = Types.VoteResult;
+
+// TODO

@@ -16,7 +16,7 @@ This repository contains a variety of resources, each serving a specific purpose
 
 This repository contains 13 chapters of lessons. Each chapter contains a set of lessons that will help you learn the fundamentals of **Motoko**, the **Internet Computer** and **DAOs**. Each lesson contains a README file.
 
-For instance, check the [the 1st lesson](./lessons/chapter-1/README.MD).
+For instance, check the [the 1st lesson](./lessons/chapter-1/CHAPTER-1.MD).
 
 ### Levels 🎮
 
