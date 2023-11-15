@@ -162,7 +162,7 @@ actor {
 | -------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | Upgrading a canister             | Lesson        | [Chapter 12](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-13/CHAPTER-13.MD)  | Learn how canisters can be upgraded and the challenges that come with it.   |
 | Variant                          | Documentation |  [The Variant type](https://web3.motoko-book.dev/common-programming-concepts/types/variants.html)          | Everything to know about the Variant type.                                  |
-| The Network Nervous System (NNS) | Appendix      | [Appendix 2](https://github.com/motoko-bootcamp/dao-adventure/blob/main/appendix/appendix-1/APPENDIX-1.MD) | Discover how the most advanced DAO on the Internet Computer takes decision. |
+| The Network Nervous System (NNS) | Appendix      | [Appendix 2](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lesson/appendix-1/APPENDIX-1.MD) | Discover how the most advanced DAO on the Internet Computer takes decision. |
 
 ```
 
