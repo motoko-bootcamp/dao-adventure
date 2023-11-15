@@ -60,3 +60,6 @@ Once you've completed all the levels, you'll be able to claim your Diploma in th
 ## Join us for the next edition 🏕️
 
 We host monthly editions of Motoko Bootcamp. This is a place to brainstorm, collaborate and build the future of DAOs, and other projects on the Internet Computer. Join us for the next edition of Motoko Bootcamp by registering through our [website](https://www.motokobootcamp.com/).
+
+## Credits 🙏
+An initiative powered and 100% supported by [Code & State](https://codeandstate.com/) - the leading Web3 venture studio.
