@@ -77,7 +77,7 @@ removeMember : shared () -> async Result<(),Text>;
 
 ## 📺 Interface
 
-Your canister should implement the following interface:
+At the end of this level, your canister should implement the following interface:
 
 ```motoko
 actor {

@@ -8,13 +8,13 @@ Inside, screens come alive with graphs and data, illustrating the flow of tokens
 
 Soon you come to understand that tokens are the lifeblood of DAOs. These tokens are more than just digital coins. It's about recognizing and rewarding contributions, big and small, ensuring the sustainability of the dream everyone is building together and giving it a structure.
 
-With every step you take, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are about fueling those dreams, supporting that community and giving it a structure.
+With every step you take, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are about fueling those dreams, supporting a community and giving it a structure.
 
 And the token? It's the fuel.
 
 The AI voice, now familiar, resonates: "**How will you empower your dream?**"
 
-You are here to find out. It's time to supercharge your DAO with a token
+You are here to find out. It's time to supercharge your DAO with a token.
 
 ## 🎯 Mission
 
@@ -92,7 +92,7 @@ totalSupply : shared query () -> async Nat;
 
 ## 📺 Interface
 
-Your canister should implement the following interface:
+At the end of this level, your canister should implement the following interface:
 
 ```motoko
 actor {

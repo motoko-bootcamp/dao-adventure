@@ -141,8 +141,10 @@ actor class DAO() = this {
     public type CreateProposalErr = {
         #NotDAOMember;
         #NotEnoughTokens;
-        #NotImplemented; // This is just a placeholder for the template to compile - can be removed
+        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
     };
+
+    public type createProposalResult = Result<CreateProposalOk, CreateProposalErr>;
 
     public type VoteOk = {
         #ProposalAccepted;
@@ -154,12 +156,10 @@ actor class DAO() = this {
         #ProposalNotFound;
         #AlreadyVoted;
         #ProposalEnded;
-        #NotImplemented; // This is just a placeholder for the template to compile - can be removed
+        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
     };
 
     public type voteResult = Result<VoteOk, VoteErr>;
-
-    public type createProposalResult = Result<CreateProposalOk, CreateProposalErr>;
 
     public shared ({ caller }) func createProposal(manifest : Text) : async createProposalResult {
         return #err(#NotImplemented);
@@ -172,11 +172,36 @@ actor class DAO() = this {
     public shared ({ caller }) func vote(id : Nat, vote : Bool) : async voteResult {
         return #err(#NotImplemented);
     };
+
     ///////////////
     // LEVEL #5 //
     /////////////
-    // If you want to insert your SVG as text in Motoko, make sure to replace all double quotes within the SVG code with single quotes.
-    // This is necessary because Motoko use double quotes as delimiters.
+
+    // func _getWebpage() : Text {
+    //     var webpage = "<style>" #
+    //     "body { text-align: center; font-family: Arial, sans-serif; background-color: #f0f8ff; color: #333; }" #
+    //     "h1 { font-size: 3em; margin-bottom: 10px; }" #
+    //     "hr { margin-top: 20px; margin-bottom: 20px; }" #
+    //     "em { font-style: italic; display: block; margin-bottom: 20px; }" #
+    //     "ul { list-style-type: none; padding: 0; }" #
+    //     "li { margin: 10px 0; }" #
+    //     "li:before { content: '👉 '; }" #
+    //     "svg { max-width: 150px; height: auto; display: block; margin: 20px auto; }" #
+    //     "h2 { text-decoration: underline; }" #
+    //     "</style>";
+
+    //     webpage := webpage # "<div><h1>" # name # "</h1></div>";
+    //     webpage := webpage # "<em>" # manifesto # "</em>";
+    //     webpage := webpage # "<div>" # logo # "</div>";
+    //     webpage := webpage # "<hr>";
+    //     webpage := webpage # "<h2>Our goals:</h2>";
+    //     webpage := webpage # "<ul>";
+    //     for (goal in goals.vals()) {
+    //         webpage := webpage # "<li>" # goal # "</li>";
+    //     };
+    //     webpage := webpage # "</ul>";
+    //     return webpage;
+    // };
 
     public type HttpRequest = Http.Request;
     public type HttpResponse = Http.Response;
