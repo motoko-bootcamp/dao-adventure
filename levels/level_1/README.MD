@@ -16,9 +16,9 @@ This hall isn't just a typical classroom. It’s clear that this is a place of g
 
 While you're lost in your thought, the artifical voice from the hologram gently asks: "**What is your dream?**"
 
-This is about turning your dreams into reality. That why before you dive into Motoko and coding, it's time to grow and develop your vision. 
+This is about turning your dreams into reality. **That's why today is time to grow and develop your vision**. 
 ## 🎯 Mission
-Your task, should you decide to embark on this journey, is to lay down the foundation and set the direction for your DAO. Here at Motoko Academy, we believe that a strong foundation is key to creating a successful DAO, and it all starts with a clear and well-defined dream. <br/>
+Your task, should you decide to embark on this journey, is to lay down the foundation and set the direction for your DAO.  Here at Motoko Academy, we believe that a strong foundation is key to creating a successful DAO, and it all starts with a clear and well-defined dream. <br/>
 So, take this moment to reflect: 
 - How do you want to live your life?
 - What’s your idea (doesn't matter if it's small or big)?
@@ -27,59 +27,33 @@ So, take this moment to reflect:
 
 Your DAO will be the vessel to help you achieve your dreams.
 
-### Task 1: Define a name for you DAO 
-Implement an immutable variable `name` of type `Text` that represents the name of your DAO.
+## ✏️ Tasks
+1. Define an immutable variable `name` of type `Text` that represents the name of your DAO. 
+2. Define a mutable variable `manifesto` of type `Text` that represents the manifesto of your DAO.
 
-### Task 2: Define a manifesto for you DAO 
-Implement a mutable variable `manifesto` of type `Text` that represents the manifesto of your DAO.
+> A manifesto is a public declaration of the intentions, motives, or views of an individual or group. It is often political in nature, but may present an individual's life stance. 
 
-_A manifesto is a public declaration of the intentions, motives, or views of an individual or group. It is often political in nature, but may present an individual's life stance. [Source - Wikipedia](https://en.wikipedia.org/wiki/Manifesto)_
-
-### Task 3: Implement the `getName` query function
-The `getName` function should:
-- Takes no parameters
-- Return the name of your DAO
+3. Implement the `getName` query function, this function takes no parameters and returns the name of your DAO.
 ``` motoko
 getName : shared query () -> async Text;
 ```
-
-### Task 4: Implement the `getManifesto` query function
-The `getManifesto` function should:
-- Takes no parameters
-- Return the manifesto of your DAO
+4. Implement the `getManifesto` query function, this function takes no parameters and returns the manifesto of your DAO.
 ``` motoko
 getManifesto : shared query () -> async Text;
 ```
-
-### Task 5: Implement the `setManifesto` update function
-The `setManifesto` function should:
-- Take a `manifesto` as a parameter of type `Text`
-- Set the `manifesto` variable to the value of the parameter
-- Return nothing
+5. Implement the `setManifesto` function, this function takes a `newManifesto` of type `Text` as a parameter, updates the value of `manifesto` and returns nothing.
 ``` motoko
 setManifesto : shared (manifesto : Text) -> async ();
 ```
-
-### Task 6: Define a list of goals for your DAO
-Implement a mutable variable `goals` of type `Buffer<Text>` that represents the goals of your DAO.
-
-### Task 7: Implement the `addGoal` function
-The `addGoal` function should:
-- Take a `goal` as a parameter of type `Text`
-- Add a new `goal` to the `goals` buffer
-- Return nothing
-```motoko
+6. Define a mutable variable `goals` of type `Buffer<Text>` will store the goals of your DAO.
+7. Implement the `addGoal` function, this function takes a `goal` of type `Text` as a parameter, adds a new `goal` to the `goals` buffer and returns nothing.
+``` motoko
 addGoal : shared (goal : Text) -> async ();
 ```
-
-### Task 8: Implement the `getGoals` query function
-The `getGoals` function should:
-- Take no parameters
-- Return all the `goals` of your DAO in an `Array`
-```motoko
+8. Implement the `getGoals` query function, this function takes no parameters and returns all the `goals` of your DAO in an `Array`.
+``` motoko
 getGoals : shared query () -> async [Text];
 ```
-
 ## 📺 Interface
 At the end of this level, your canister should implement the following interface:
 
@@ -93,6 +67,7 @@ actor {
 }
 ```
 ## 📚 Resources
+This set of resources will help you complete this level and contains useful information for your journey ahead.
 | Name | Type | URL | Description |
 | ---- | ---- | --- | ----------- |
 | Fundamental concepts | Lesson | [Chapter 1](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-1/CHAPTER-1.MD) | Learn about the fundamental concepts of Motoko - a must read! |

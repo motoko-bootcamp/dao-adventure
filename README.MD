@@ -7,3 +7,10 @@ Start with the [first level](./levels/level_1/README.MD) and follow the instruct
 
 ## Need some hlep? 
 Join the [Motoko Bootcamp Discord](https://discord.gg/uAvPEZtD4e) and ask for help, we will be happy to help you!
+
+## Todo
+
+- voteOk -> VoteOk (and all others)
+- name -> tokenName
+- symbol -> tokenSymbol
+- Modify Level 4
