@@ -1,0 +1,8 @@
+{
+  "canisters": {
+    "dao": {
+      "main": "src/main.mo",
+      "type": "motoko"
+    }
+  }
+}
