@@ -24,8 +24,14 @@ RUN curl --fail -sSf https://raw.githubusercontent.com/creationix/nvm/v0.39.1/in
 # Install latest available version of dfx
 RUN sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
 
+# Init dfx
+RUN sh -ci "dfx start"
+
 # Install mops
 RUN sh -ci "npm i -g ic-mops"
 
 # Init mops
 RUN sh -ci "mops init"
+
+# Stop dfx
+RUN sh -ci "dfx stop"
