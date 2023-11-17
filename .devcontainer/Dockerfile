@@ -34,4 +34,4 @@ RUN sh -ci "npm i -g ic-mops"
 RUN sh -ci "mops init"
 
 # Stop dfx
-RUn sh -ci "dfx stop"
+RUN sh -ci "dfx stop"
