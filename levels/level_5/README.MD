@@ -14,7 +14,7 @@ Canisters are able to serve web content and websites! We will leverage this feat
 
 The end result should look something like this:
 
-![Motoko Bootcamp Website](https://raw.githubusercontent.com/motoko-bootcamp/dao-adventure/main/levels/assets/level_5/webpage_mbc.png)
+<p align="center"> <img src="../../assets/level_5/webpage_mbc.png"  style="border: 1px solid black;"/> </p>
 
 ## ✏️ Tasks
 
