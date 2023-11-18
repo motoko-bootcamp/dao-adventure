@@ -56,7 +56,7 @@ In the Motoko Bootcamp Discord, we have a section dedicated to builders. This is
 The ICP Community Conference is the 1st organized conference that celebrates, inspires, & connects the #ICP ecosystem. The first one took place in May 2023 and gathered 100+ community members. This was an absolute blast and we're planning the next one for 2024!
 
 - Checkout the recap video of the [first conference](https://www.youtube.com/watch?v=CG2wFpUTnxk).
-- Follow ICP Community Conference on [Twitter] to stay updated (https://twitter.com/icp_cc) - @icp_cc.
+- Follow ICP Community Conference on [Twitter](https://twitter.com/icp_cc) to stay updated - @icp_cc.
 - Join the [Email List](https://webforms.pipedrive.com/f/6N8jTemXLwtr7dhqUokx3X1BIwMQFD6jpror1KBZNhTOOaly1bFhWhASOYXRT9QotZ) to get notified about the next conference and access early bird tickets.
 
 ### Find a job with TalentDB 💼
@@ -85,7 +85,7 @@ Additionally, DFINITY has announced a specific $5 million program to support the
 
 DFINITY also offers a grant program for [educational and community initiatives](https://dfinity.org/community-grants). If you have an idea for a hackathon, workshop, or other community event, you can apply for a grant to secure funding.
 
-Please remember to mention that you were referred through the Motoko Bootcamp if you decide to apply for a grant. Also we can assist you with your application.
+Note: Please make sure to mention that you were referred by the Motoko Bootcamp when applying for a grant. Additionally, we are available to assist you with your grant application.
 
 ### Get involved and help us write the next chapter of Motoko Bootcamp 🏕️
 
@@ -145,5 +145,5 @@ Here are a few selected ressources to help you in your journey:
 - []
 - []
 - []
-- []![Alt text](image.png)
+- []
 - []
