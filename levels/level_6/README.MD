@@ -51,7 +51,7 @@ In the Motoko Bootcamp Discord, we have a section dedicated to builders. This is
 
 ### Join us for the next ICP Community Conference 🥳
 
-<p align="center"> <img src="../../assets/level_6/icpcc.png"  style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../assets/level_6/icpcc.png"  style="border: 1px solid black; width: 500px;"/> </p>
 
 The ICP Community Conference is the 1st organized conference that celebrates, inspires, & connects the #ICP ecosystem. The first one took place in May 2023 and gathered 100+ community members. This was an absolute blast and we're planning the next one for 2024!
 
@@ -61,7 +61,7 @@ The ICP Community Conference is the 1st organized conference that celebrates, 
 
 ### Find a job with TalentDB 💼
 
-<p align="center"> <img src="../../assets/level_6/talentdb.png"  style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../assets/level_6/talentdb.png"  style="border: 1px solid black; width: 500px;"/> </p>
 
 Are you looking for a job in Web3? Make sure to check out TalentDB - a recruiting agency for the Internet Computer.
 
@@ -71,7 +71,7 @@ Are you looking for a job in Web3? Make sure to check out TalentDB - a recruitin
 
 ### Apply for a grant with the DFINITY Foundation 💰
 
-<p align="center"> <img src="../../assets/level_6/grant_program.png"  style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../assets/level_6/grant_program.png"  style="border: 1px solid black; width: 500px;"/> </p>
 
 DFINITY operates a [developer grant program](https://dfinity.org/grants) to support those building on the Internet Computer platform. If you have an idea and want to develop on the IC, you can request funding, which can range from $5,000 to $100,000 (though first-time applicants are unlikely to receive $100,000). The grant program focuses on the following areas:
 
@@ -90,9 +90,9 @@ Please remember to mention that you were referred through the Motoko Bootcamp if
 ### Get involved and help us write the next chapter of Motoko Bootcamp 🏕️
 
 <div style="display: flex; justify-content: center; max-width: 500px; margin: 0 auto;">
-    <img src="../../assets/level_6/Poster-1.png" alt="Poster 1" style="border: 1px solid black; margin: 5px;">
-    <img src="../../assets/level_6/Poster-2.png" alt="Poster 2" style="border: 1px solid black; margin: 5px;">
-    <img src="../../assets/level_6/Poster-3.png" alt="Poster 3" style="border: 1px solid black; margin: 5px;">
+    <img src="../../assets/level_6/Poster-1.png" alt="Poster 1" style="border: 1px solid black; margin: 5px; width: 33%;">
+    <img src="../../assets/level_6/Poster-2.png" alt="Poster 2" style="border: 1px solid black; margin: 5px; width: 33%;">
+    <img src="../../assets/level_6/Poster-3.png" alt="Poster 3" style="border: 1px solid black; margin: 5px; width: 33%;">
 </div>
 
 You can help us grow the Bootcamp by:
