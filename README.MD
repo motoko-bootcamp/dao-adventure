@@ -6,7 +6,7 @@
 
 - Make sure to join the [Motoko Bootcamp Discord](https://discord.gg/uAvPEZtD4e) to get help and support from our community.
 - Start this Codespaces by clicking on the green button "Code" and then "Open with Codespaces".
-- Watch [our video to learn how to get started with Motoko Bootcamp](https://www.youtube.com/watch?v=Z3Q0s7jYgNA).
+- Watch [our video to learn how to get started with Motoko Bootcamp](https://www.youtube.com/watch?v=y9bmdjYH-Ew).
 
 ## How to navigate this repository? 🧭
 
