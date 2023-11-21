@@ -83,7 +83,7 @@ At the end of this level, your canister should implement the following interface
 
     ```motoko
     actor {
-        getStats : shared query () -> async DAOStats;
+        getStats : shared query () -> async DAOInfo;
         http_request : shared query (request : HttpRequest) -> async HttpResponse;
     }
     ```
