@@ -80,13 +80,12 @@ public query func http_request(request : HttpRequest) : async HttpResponse {
 ## 📺 Interface
 
 At the end of this level, your canister should implement the following interface:
-
-    ```motoko
-    actor {
-        getStats : shared query () -> async DAOInfo;
-        http_request : shared query (request : HttpRequest) -> async HttpResponse;
-    }
-    ```
+```motoko
+actor {
+  getStats : shared query () -> async DAOInfo;
+  http_request : shared query (request : HttpRequest) -> async HttpResponse;
+}
+```
 
 ## 📚 Resources
 
