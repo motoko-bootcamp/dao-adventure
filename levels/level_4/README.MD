@@ -152,7 +152,7 @@ At the end of this level, your canister should implement the following interface
 actor {
     createProposal : shared (manifest : Text) -> async createProposalResult;
     getProposal : shared (id : Nat) -> async ?Proposal;
-    vote : shared (id : Nat, vote : Bool) -> async voteResult;
+    vote : shared (id : Nat, vote : Bool) -> async VoteResult;
 }
 ```
 
