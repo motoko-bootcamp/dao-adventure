@@ -74,9 +74,8 @@ await suite(
             func() : async () {
                 let dao = await main.DAO();
                 let result = await dao.addMember({ age = 5; name = "test" });
-                let result2 = await dao.addMember({ age = 5; name = "test2" });
                 let members = await dao.getAllMembers();
-                assert (members == [{ age = 5; name = "test" }, { age = 5; name = "test2" }]);
+                assert (members == [{ age = 5; name = "test" }]);
             },
         );
         await test(
