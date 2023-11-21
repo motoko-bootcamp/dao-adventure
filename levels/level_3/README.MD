@@ -67,7 +67,7 @@ tokenSymbol : shared query () -> async Text;
 
 ````motoko
 mint : shared (Principal, Nat) -> async ();
-```motoko
+```
 
 > The default account is the account with a `subaccount` set to `null`.
 
