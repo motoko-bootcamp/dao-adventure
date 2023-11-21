@@ -65,7 +65,7 @@ tokenSymbol : shared query () -> async Text;
 
 4. Implement the `mint` function. This function takes a `Principal` and a `Nat` as arguments. It adds the `Nat` to the balance of the default account of the given `Principal` and returns nothing.
 
-````motoko
+```motoko
 mint : shared (Principal, Nat) -> async ();
 ```
 
