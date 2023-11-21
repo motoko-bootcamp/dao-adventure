@@ -74,9 +74,10 @@ mint : shared (Principal, Nat) -> async ();
 > In a real world scenario, the `mint` function would be restricted to a specific set of identities. For the sake of simplicity, we will not implement this restriction.
 
 5. Implement the `transfer` function. This function takes an `Account` object for the sender (`from`), an `Account` object for the recipient (`to`), and a `Nat` value for the amount to be transferred. It transfers the specified amount of tokens from the sender's account to the recipient's account. You will use the  `Result` type for your return value.
+
 ```motoko
 transfer : shared (from : Account, to : Account, amount:  Nat) -> async Result<(), Text>;
-````
+```
 
 6. Implement the `balanceOf` query function. This function takes an `Account` object as an argument and returns the balance of the given account as a `Nat`. It returns 0 if the account does not exist in the `ledger` variable.
 
