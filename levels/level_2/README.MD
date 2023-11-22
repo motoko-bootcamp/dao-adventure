@@ -1,4 +1,5 @@
 # Level 2 - Building bonds
+<img src="../../assets/level_2/cover.png"  style="width: 100%;"/>
 
 ## Introduction
 

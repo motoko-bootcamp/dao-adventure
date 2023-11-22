@@ -1,4 +1,5 @@
 # Level 3 - Supercharging your DAO with economic power
+<img src="../../assets/level_3/cover.png"  style="width: 100%;"/>
 
 ## Introduction
 

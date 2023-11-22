@@ -1,4 +1,5 @@
 # Level 5 - Showing the DAO to the world
+<img src="../../assets/level_5/cover.png"  style="width: 100%;"/>
 
 ## Introduction
 

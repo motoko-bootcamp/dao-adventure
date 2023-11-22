@@ -1,4 +1,5 @@
 # Level 4 - The collective voice
+<img src="../../assets/level_4/cover.png"  style="width: 100%;"/>
 
 ## Introduction
 
