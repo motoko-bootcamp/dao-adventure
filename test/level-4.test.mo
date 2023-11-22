@@ -29,6 +29,8 @@ await suite(
             "createProposal",
             func() : async () {
                 let dao = await main.DAO();
+                let member = await dao.addMember({ age = 5; name = "test" });
+
                 // Should throw an error cause we don't have enough tokens
                 let err = await dao.createProposal("This is a test proposal that should be rejected");
 
@@ -51,6 +53,8 @@ await suite(
             "getProposal",
             func() : async () {
                 let dao = await main.DAO();
+                let member = await dao.addMember({ age = 5; name = "test" });
+
                 // Let's mint some token to create a proposal
                 let myPrincipal = await dao.whoami();
                 let myAccount = { owner = myPrincipal; subaccount = null };
@@ -90,6 +94,8 @@ await suite(
             "vote",
             func() : async () {
                 let dao = await main.DAO();
+                let member = await dao.addMember({ age = 5; name = "test" });
+                
                 // Let's mint one token just o create a proposal
                 let myPrincipal = await dao.whoami();
                 let myAccount = { owner = myPrincipal; subaccount = null };

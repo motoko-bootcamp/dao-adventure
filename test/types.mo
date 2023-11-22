@@ -52,6 +52,8 @@ module {
         #ProposalNotFound;
         #AlreadyVoted;
         #ProposalEnded;
+        #NotDAOMember;
+        #NotEnoughTokens;
         #NotImplemented; // This is just a placeholder for the template to compile - can be removed
     };
 
