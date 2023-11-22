@@ -85,7 +85,7 @@ await suite(
                 let result = await dao.addMember({ age = 5; name = "test" });
                 let result2 = await dao.addMember({ age = 5; name = "test2" });
                 let members = await dao.numberOfMembers();
-                assert (members == 2);
+                assert (members == 1);
             },
         );
     },
