@@ -115,6 +115,9 @@ To help you moving forward we've defined the following types:
   - `ProposalNotFound`: Represents the error when a proposal with the given identifier doesn't exist.
   - `AlreadyVoted`: Represents the error when a member has already voted on a proposal.
   - `ProposalEnded`: Represents the error when a member tries to vote on a proposal that has already been accepted or refused.
+  - `NotEnoughTokens`: Represents the error when a member does not have enough tokens to cast a vote.
+  - `NotDAOMember`: Represents the error when the person trying to vote is not a member of the DAO.
+
 
   ```motoko
   public type VoteErr = {
