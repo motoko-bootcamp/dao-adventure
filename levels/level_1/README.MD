@@ -1,4 +1,6 @@
 # Level 1 - What is your dream? 
+<img src="../../assets/level_1/cover.png"  style="width: 100%;" />
+
 ## Introduction
 "**Welcome to the Motoko Academy - we are thrilled to have you here!**" As you stand at the entrance, a large luminous hologram greets you.
 

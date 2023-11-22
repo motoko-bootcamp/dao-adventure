@@ -1,4 +1,5 @@
 # Level 6 - Keep Buiding!
+<img src="../../assets/level_6/cover.png"  style="width: 100%;"/>
 
 ## Introduction
 
