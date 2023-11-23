@@ -59,4 +59,14 @@ module {
 
     public type VoteResult = Result<VoteOk, VoteErr>;
 
+    // Level 5
+    public type DAOInfo = {
+        name : Text;
+        manifesto : Text;
+        goals : [Text];
+        member : [Text];
+        logo : Text;
+        numberOfMembers : Nat;
+    };
+
 };
