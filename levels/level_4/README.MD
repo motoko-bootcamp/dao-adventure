@@ -124,6 +124,8 @@ To help you moving forward we've defined the following types:
       #ProposalNotFound;
       #AlreadyVoted;
       #ProposalEnded;
+      #NotEnoughTokens;
+      #NotDAOMember;
   };
   ```
 
