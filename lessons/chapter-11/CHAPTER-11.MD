@@ -46,7 +46,7 @@ let invoiceCanister = actor("rrkah-fqaaa-aaaaa-aaaaq-ca") : actor {
     payInvoice : shared (id : InvoiceId) -> async Result.Result<(), Text>;
 };
 ```
-Once `invoiceCanister` is defined, any function can be called can be called. For instance that's how you would call `createInvoice`.
+Once `invoiceCanister` is defined, any function can be called. For instance, that's how you would call `createInvoice`.
 ```motoko
 let invoiceId = await invoiceCanister.createInvoice();
 ```
