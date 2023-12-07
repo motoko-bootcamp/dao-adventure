@@ -4,7 +4,7 @@
 
 ## Your mission 📜
 
-If you want to become one of Web3 hero, you are in the right place. <br/>
+If you want to become one of the Web3 hero, you are in the right place. <br/>
 
 <p align="center"> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" width="500px" /> </p>
 
@@ -81,9 +81,12 @@ Once you've completed all the levels, you'll be able to claim your Diploma in th
 
 ## How to get started with this repository? 🚀
 
-You have two options to get started with this repository:
+You have two available options:
 
 1. Run this repository directly in your browser. This is the easiest way to get started. You can do so by clicking on the following button:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/motoko-bootcamp/dao-adventure)
+
 2. Run this repository locally. You'll need to install the [DFINITY Canister SDK](https://sdk.dfinity.org/docs/quickstart/local-quickstart.html) to do so and setup your environment. You can find a detailed guide on how to do so [here](https://www.youtube.com/watch?v=DTDP7WYU07w).
 
 ## Useful links 🔗
