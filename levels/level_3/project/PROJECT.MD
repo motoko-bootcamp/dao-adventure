@@ -108,14 +108,3 @@ actor {
 }
 ```
 
-## 📚 Resources
-
-This set of resources will help you complete this level and contains useful information for your journey ahead.
-
-| Name          | Type          | URL                                                                                                       | Description                                                        |
-| ------------- | ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Handle errors | Lesson        | [Chapter 9](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-9/CHAPTER-9.MD)    | Discover how to handle errors in Motoko                            |
-| Identity      | Lesson        | [Chapter 10](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-10/CHAPTER-10.MD) | Learn how identity works on the Internet Comptuer                  |
-| Intercanister | Lesson        | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform intercanister calls in Motoko                 |
-| Candid        | Lesson        | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform inter-canister calls on the Internet Computer |
-| Result        | Documentation | [Base Library - Result](https://internetcomputer.org/docs/current/motoko/main/base/Result)                | The official documentation for the `Result` library in Motoko      |

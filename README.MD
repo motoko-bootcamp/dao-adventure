@@ -6,7 +6,7 @@
 
 If you want to become one of Web3 hero, you are in the right place. <br/>
 
-<p> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" width="300px" /> </p>
+<p align="center"> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" width="500px" /> </p>
 
 DAOs are the future of work and human organizations. They are the building blocks of the Web3 revolution. <br/>
 

@@ -1,6 +1,6 @@
 import Result "mo:base/Result";
 import HashMap "mo:base/HashMap";
-actor class DAO() {
+actor class DAO() = this {
 
     public type Member = {
         name : Text;
