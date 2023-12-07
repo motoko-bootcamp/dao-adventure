@@ -6,7 +6,7 @@
 
 If you want to become one of Web3 hero, you are in the right place. <br/>
 
-<p> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" /> </p>
+<p> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" width="300px" /> </p>
 
 DAOs are the future of work and human organizations. They are the building blocks of the Web3 revolution. <br/>
 
@@ -80,6 +80,11 @@ Head over to the **submit** section and submit the id of the canister you've dep
 Once you've completed all the levels, you'll be able to claim your Diploma in the **Diploma** section.
 
 ## How to get started with this repository? 🚀
+
+You have two options to get started with this repository:
+
+1. Run this repository directly in your browser. This is the easiest way to get started. You can do so by clicking on the following button:
+2. Run this repository locally. You'll need to install the [DFINITY Canister SDK](https://sdk.dfinity.org/docs/quickstart/local-quickstart.html) to do so and setup your environment. You can find a detailed guide on how to do so [here](https://www.youtube.com/watch?v=DTDP7WYU07w).
 
 ## Useful links 🔗
 

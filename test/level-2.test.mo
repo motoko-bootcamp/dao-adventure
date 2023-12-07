@@ -23,7 +23,7 @@ await suite(
                 func equal(a : MyRes, b : MyRes) : Bool {
                     return a == b;
                 };
-                // We shouldn't be able to add a member since we've already added one
+                // We shouldn't be able to add a member since we've already added one 
                 expect.result<(), Text>(err, show, equal).isErr();
             },
         );
