@@ -30,7 +30,11 @@ Today, we'll delve into advanced topics, including:
 
 This set of resources will help you complete this level and contains useful information for your journey ahead.
 
-[TODO]
+| Name                              | Type          | URL                                                                                                       | Description                                                                                  |
+| --------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| HTTP Outcalls                     | Documentation | [Click Here](https://internetcomputer.org/https-outcalls)                                                 | Learn how canisters can make requests to the Web2 world                                      |
+| Security best practices           | Documentation | [Click Here](https://internetcomputer.org/docs/current/developer-docs/security/)                          | An overview of security recommendations and best practices to build on the Internet Computer |
+| What to do after Motoko Bootcamp? | Appendix      | [Appendix 3](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-1/APPENDIX-1.MD) | Let's f♾️cking build!                                                                        |
 
 ## Concepts 🧠
 

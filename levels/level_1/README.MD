@@ -39,7 +39,7 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 | Primitive Types             | Lesson        | [Chapter 3](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-3/CHAPTER-3.MD)  | Learn about primitive types in Motoko.                                 |
 | Candid                      | Lesson        | [Chapter 4](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-4/CHAPTER-4.MD)  | Learn about Candid the IDL of the Internet Computer and why it matters |
 | Buffer                      | Documentation | [Base Library - Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer)              | The official documentation for the `Buffer` library in Motoko          |
-| Unlocking the power of DAOs | Appendix      | [Appendix](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-1/APPENDIX-1.MD) | Learn about the power of DAOs                                          |
+| Unlocking the power of DAOs | Appendix      | [Appendix 1](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-1/APPENDIX-1.MD) | Learn about the power of DAOs                                          |
 
 ## Concepts 🧠
 
