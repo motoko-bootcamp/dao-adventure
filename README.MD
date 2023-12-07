@@ -12,7 +12,7 @@ DAOs are the future of work and human organizations. They are the building block
 
 Your task is simple, yet challenging. You have 7 days to build an application that leverages the power of DAO on the Internet Computer. <br/>
 
-Are you up for the challenge? If so, the detailed requirements of the challenge are available in the corresponding [project](./levels/level_6/project/PROJECT.MD) folder.
+Are you up for the challenge? If so, the detailed requirements of the challenge are available in the corresponding [project](./levels/level_6/PROJECT.MD) folder.
 
 ## How to navigate this repository? 🧭
 
