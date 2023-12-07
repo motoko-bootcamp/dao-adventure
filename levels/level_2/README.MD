@@ -30,14 +30,16 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 > This set of resources will help you complete this level and contains useful information for your journey ahead.
 
-| Name                        | Type          | URL                                                                                                     | Description                                                            |
-| --------------------------- | ------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Fundamental concepts        | Lesson        | [Chapter 1](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-1/CHAPTER-1.MD)  | Learn about the fundamental concepts of Motoko - a must read!          |
-| Common programming concepts | Lesson        | [Chapter 2](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-2/CHAPTER-2.MD)  | Learn about variables, functions and basic expressions in Motoko.      |
-| Primitive Types             | Lesson        | [Chapter 3](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-3/CHAPTER-3.MD)  | Learn about primitive types in Motoko.                                 |
-| Candid                      | Lesson        | [Chapter 4](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-4/CHAPTER-4.MD)  | Learn about Candid the IDL of the Internet Computer and why it matters |
-| Buffer                      | Documentation | [Base Library - Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer)              | The official documentation for the `Buffer` library in Motoko          |
-| Unlocking the power of DAOs | Appendix      | [Appendix](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-1/APPENDIX-1.MD) | Learn about the power of DAOs                                          |
+This set of resources will help you complete this level and contains useful information for your journey ahead.
+
+| Name                       | Type          | URL                                                                                                     | Description                                                                    |
+| -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Datastructures             | Lesson        | [Chapter 6](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-6/CHAPTER-6.MD)  | Learn about common datastructures in Motoko and how to use them - a must read! |
+| Non-Primitives Types       | Lesson        | [Chapter 7](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-7/CHAPTER-7.MD)  | Learn about non-primitive types in Motoko such as Tuples, Objects and Variants |
+| Advanced Types             | Lesson        | [Chapter 8](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-8/CHAPTER-8.MD)  | Discover more advanced types such as Optional, Generic or Shared types         |
+| Result                     | Documentation | [Base Library - Result](https://internetcomputer.org/docs/current/motoko/main/base/Result)              | The official documentation for the `Result` library in Motoko                  |
+| HashMap                    | Documentation | [Base Library - HashMap](https://internetcomputer.org/docs/current/motoko/main/base/HashMap)            | The official documentation for the `HashMap` library in Motoko                 |
+| The Network Nervous System | Appendix      | [Appendix](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-2/APPENDIX-2.MD) | Learn everything about the power of the NNS                                    |
 
 ## Concepts 🧠
 
@@ -47,21 +49,17 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 - Understand what is the **Base Library** and how to use it.
 - Understand how to manipulate control flow operators in Motoko : `if`, `else`, `switch`, `for`, `while` and `switch/case`.
 - Understand how the Internet Computer enables new use cases for **DAOs** and how to leverage them.
-- Becoming familiar with the Network Nervous System (**NNS**) and how it works.
+- Become familiar with the Network Nervous System (**NNS**), it's importance for the Internet Computer and how it works.
 - Becoming familiar with primitive and non-primitive types in Motoko such as `Nat`, `Int`, `Text`, `Bool`, `Array`, `Buffer`, `Tuples`, `Objects`, `Variants`, `Optionals`, `Generics` and `Shared` types.
 
 ## Motoko pill of the day 💊
 
 > On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://opensea.io/collection/motoko-ghosts).
 
-<div style="text-align: center;">
-    <img src="../../assets/level_2/guide/motoko_ghosts.jpeg" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_2/guide/motoko_ghosts.jpeg" style="width: 500px;" /></p>
 
 ## Meme of the day 🙈
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<div style="text-align: center;">
-    <img src="../../assets/level_2/guide/meme_level_2.png" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_2/guide/meme_level_2.png" style="width: 500px;" /></p>

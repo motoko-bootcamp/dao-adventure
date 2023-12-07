@@ -58,14 +58,10 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 > Before deciding to call it Motoko, the language developed by DFINITY for the Internet Computer was actually called ActorScript. The name was changed to Motoko in 2019 and was inspired by the character Motoko Kusanagi from the anime Ghost in the Shell.
 
-<p align="center">
-    <img src="../../assets/level_1/guide/motoko_kusanagi.png" style="width: 500px;" />
-</p>
+<p align="center"><img src="../../assets/level_1/guide/motoko_kusanagi.png" style="width: 500px;" /></p>
 
 ## Meme of the day 🙈
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<p align="center">
-    <img src="../../assets/level_1/guide/meme_level_1.jpg" style="width: 500px;" />
-</p>
+<p align="center"><img src="../../assets/level_1/guide/meme_level_1.jpg" style="width: 500px;" /></p>
