@@ -8,7 +8,10 @@ tasks:
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
       sudo apt-get install -q -y libunwind-dev
       sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-      dfx start --background --clean
+      sh -ci "npm i -g ic-mops"
+      sh -ci "mops initi"
+      sh -ci "dfx start --clean --background"
+      sh -ci "dfx stop"
 
 vscode:
   extensions:
