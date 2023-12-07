@@ -30,7 +30,7 @@ The end result should look something like this:
 
 To help you move forward, we've defined the following type:
 
-- `DAOInfo` : which represents the information about the DAO. It has the following fields:
+- `DAOStats` : which represents the information about the DAO. It has the following fields:
   - `name`: A `Text` representing the name of the DAO.
   - `manifesto`: A `Text` representing the manifesto of the DAO.
   - `goals`: An `Array` of `Text` representing the goals of the DAO.
@@ -39,7 +39,7 @@ To help you move forward, we've defined the following type:
   - `numberOfMembers`: A `Nat` representing the number of members of the DAO.
 
 ```motoko
-public type DAOInfo = {
+public type DAOStats = {
     name : Text;
     manifesto : Text;
     goals : [Text];
@@ -52,7 +52,7 @@ public type DAOInfo = {
 3. Implement the function `getStats`. This function takes no parameters and returns a `DAOInfo` object that contains updated information about the DAO.
 
 ```motoko
-getStats : shared query () -> async DAOInfo;
+getStats : shared query () -> async DAOStats;
 ```
 
 To help you move forward, we've defined an helper function `getWebpage()`. The `_getWebpage` function return a `Text` object that contains the formatted webpage.
@@ -85,7 +85,7 @@ At the end of this level, your canister should implement the following interface
 
 ```motoko
 actor {
-  getStats : shared query () -> async DAOInfo;
+  getStats : shared query () -> async DAOStats;
   http_request : shared query (request : HttpRequest) -> async HttpResponse;
 }
 ```

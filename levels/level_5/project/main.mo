@@ -265,7 +265,7 @@ actor class DAO()  {
     //     return webpage;
     // };
 
-    public type DAOInfo = {
+    public type DAOStats = {
         name : Text;
         manifesto : Text;
         goals : [Text];
@@ -285,7 +285,7 @@ actor class DAO()  {
         });
     };
 
-    public query func getStats() : async DAOInfo {
+    public query func getStats() : async DAOStats {
         return ({
             name = "";
             manifesto = "";
