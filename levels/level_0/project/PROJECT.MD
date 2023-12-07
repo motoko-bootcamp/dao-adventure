@@ -1,6 +1,6 @@
 # Level 0 - The Initiation Challenge
 
-<p> <img src="../../../assets/level_0/project/academy.webp" alt="Build" /> </p>
+<p > <img src="../../../assets/level_0/project/academy.webp" alt="Build" /> </p>
 
 ## Introduction
 
@@ -14,7 +14,7 @@ _But the rewards extend beyond the scroll. Those who make it onto the list are g
 
 _As you approach the grand entrance, a luminous hologram greets you with an inviting voice, "Ready to shape the digital future?" It stands as the guardian of knowledge at the academy, guiding aspirants on their journey._
 
-<p> <img src="../../../assets/level_0/project/challenge.webp" alt="Build" /> </p>
+<p align="center"> <img src="../../../assets/level_0/project/challenge.webp" alt="Build" /> </p>
 
 ## 🎯 Mission
 

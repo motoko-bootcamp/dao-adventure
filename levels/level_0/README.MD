@@ -36,16 +36,14 @@ This set of resources will help you complete this level and contains useful info
 
 > The Motoko Bootcamp is a 7 day transformative journey that turns beginners into digital heroes. It is an initiative organized and supported by [Code & State](https://www.codeandstate.com/).
 
-<div style="text-align: center;">
+<p align="center">
     <img src="../../assets/level_0/guide/Poster-1.png" style="width: 300px; display: inline;" />
     <img src="../../assets/level_0/guide/Poster-2.png" style="width: 300px; display: inline;" />
     <img src="../../assets/level_0/guide/Poster-3.png" style="width: 300px; display: inline;" />
-</div>
+</p>
 
 ## Meme of the day 🙈
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<div style="text-align: center;">
-    <img src="../../assets/level_0/guide/meme_level_0.jpg" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_0/guide/meme_level_0.jpg" style="width: 500px;" /></p>

@@ -1,6 +1,6 @@
 # Level 1 - What is your dream?
 
-<img src="../../../assets/level_1/project//cover.png"  style="width: 100%;" />
+<img src="../../../assets/level_1/project/cover.png"  style="width: 100%;" />
 
 ## Introduction
 
