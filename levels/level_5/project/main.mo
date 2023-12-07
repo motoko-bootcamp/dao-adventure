@@ -1,5 +1,6 @@
 import Result "mo:base/Result";
 import HashMap "mo:base/HashMap";
+import TrieMap "mo:base/TrieMap";
 import Principal "mo:base/Principal";
 import Text "mo:base/Text";
 import Account "account";
@@ -8,35 +9,45 @@ import Iter "mo:base/Iter";
 import Blob "mo:base/Blob";
 import Debug "mo:base/Debug";
 import Http "http";
-actor class DAO() = this {
+actor class DAO()  {
+
+    // For the logic of this level we need to bring back all the previous levels
 
     ///////////////
     // LEVEL #1 //
     /////////////
 
+    let name : Text = "Motoko Bootcamp DAO";
+    var manifesto : Text = "Empower the next wave of builders to make the Web3 revolution a reality";
+
+    let goals : Buffer.Buffer<Text> = Buffer.Buffer<Text>(0);
+
     public shared query func getName() : async Text {
-        return "Not implemented";
+        return name;
     };
 
     public shared query func getManifesto() : async Text {
-        return "Not implemented"
+        return manifesto;
     };
 
     public func setManifesto(newManifesto : Text) : async () {
+        manifesto := newManifesto;
         return;
     };
 
     public func addGoal(newGoal : Text) : async () {
+        goals.add(newGoal);
         return;
     };
 
     public shared query func getGoals() : async [Text] {
-        return []
+        return Buffer.toArray(goals);
     };
 
     ///////////////
     // LEVEL #2 //
     /////////////
+
     public type Member = {
         name : Text;
         age : Nat;
@@ -47,19 +58,50 @@ actor class DAO() = this {
     let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
 
     public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
-        return #err("Not implemented");
+        switch (dao.get(caller)) {
+            case (?member) {
+                return #err("Already a member");
+            };
+            case (null) {
+                dao.put(caller, member);
+                return #ok(());
+            };
+        };
     };
 
     public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
-        return #err("Not implemented");
+        switch (dao.get(caller)) {
+            case (?member) {
+                dao.put(caller, member);
+                return #ok(());
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
     };
 
     public shared ({ caller }) func removeMember() : async Result<(), Text> {
-        return #err("Not implemented");
+        switch (dao.get(caller)) {
+            case (?member) {
+                dao.delete(caller);
+                return #ok(());
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
     };
 
     public query func getMember(p : Principal) : async Result<Member, Text> {
-        return #err("Not implemented");
+        switch (dao.get(p)) {
+            case (?member) {
+                return #ok(member);
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
     };
 
     public query func getAllMembers() : async [Member] {
@@ -67,13 +109,12 @@ actor class DAO() = this {
     };
 
     public query func numberOfMembers() : async Nat {
-        return 0;
+        return dao.size();
     };
 
     ///////////////
     // LEVEL #3 //
     /////////////
-    // For this level make sure to use the helpers function in Account.mo
 
     public type Subaccount = Blob;
     public type Account = {
@@ -81,34 +122,67 @@ actor class DAO() = this {
         subaccount : ?Subaccount;
     };
 
+    let nameToken = "Motoko Bootcamp Token";
+    let symbolToken = "MBT";
+
+    let ledger : TrieMap.TrieMap<Account, Nat> = TrieMap.TrieMap(Account.accountsEqual, Account.accountsHash);
+
     public query func tokenName() : async Text {
-        return "Not implemented";
+        return nameToken;
     };
 
     public query func tokenSymbol() : async Text {
-        return "Not implemented";
+        return symbolToken;
     };
 
     public func mint(owner : Principal, amount : Nat) : async () {
+        let defaultAccount = { owner = owner; subaccount = null };
+        switch (ledger.get(defaultAccount)) {
+            case (null) {
+                ledger.put(defaultAccount, amount);
+            };
+            case (?some) {
+                ledger.put(defaultAccount, some + amount);
+            };
+        };
         return;
     };
 
     public shared ({ caller }) func transfer(from : Account, to : Account, amount : Nat) : async Result<(), Text> {
-        return #err("Not implemented");
+        let fromBalance = switch (ledger.get(from)) {
+            case (null) { 0 };
+            case (?some) { some };
+        };
+        if (fromBalance < amount) {
+            return #err("Not enough balance");
+        };
+        let toBalance = switch (ledger.get(to)) {
+            case (null) { 0 };
+            case (?some) { some };
+        };
+        ledger.put(from, fromBalance - amount);
+        ledger.put(to, toBalance + amount);
+        return #ok();
     };
 
     public query func balanceOf(account : Account) : async Nat {
-        return 0;
+        return switch (ledger.get(account)) {
+            case (null) { 0 };
+            case (?some) { some };
+        };
     };
 
     public query func totalSupply() : async Nat {
-        return 0;
+        var total = 0;
+        for (balance in ledger.vals()) {
+            total += balance;
+        };
+        return total;
     };
 
     ///////////////
     // LEVEL #4 //
     /////////////
-    // For this level you need to make use of the code implemented in Level 3
 
     public type Status = {
         #Open;
@@ -222,11 +296,4 @@ actor class DAO() = this {
         });
     };
 
-    //////////////////
-    // DO NOT REMOVE /
-    /////////////////
-
-    public shared ({ caller }) func whoami() : async Principal {
-        return caller;
-    };
 };

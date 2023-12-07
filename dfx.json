@@ -1,7 +1,23 @@
 {
   "canisters": {
-    "dao": {
-      "main": "src/main.mo",
+    "level_1": {
+      "main": "levels/level_1/project/main.mo",
+      "type": "motoko"
+    },
+    "level_2": {
+      "main": "levels/level_2/project/main.mo",
+      "type": "motoko"
+    },
+    "level_3": {
+      "main": "levels/level_3/project/main.mo",
+      "type": "motoko"
+    },
+    "level_4": {
+      "main": "levels/level_4/project/main.mo",
+      "type": "motoko"
+    },
+    "level_5": {
+      "main": "levels/level_5/project/main.mo",
       "type": "motoko"
     }
   },

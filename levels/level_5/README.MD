@@ -1,95 +1,63 @@
-# Level 5 - Showing the DAO to the world
-<img src="../../assets/level_5/cover.png"  style="width: 100%;"/>
+# Day 3️5️⃣
 
 ## Introduction
 
-It's showtime! 🎤
-You have built the foundational structure for the DAO.
-By now, it's time to go public and showcase your vision to the rest of the world. The more public and vocal you are about the DAO, the more people will know about it, the more magic will happen.
+It's Day 5 - Time flies! You should be proud of yourself, as we're nearing the end of the week.
 
-A simple way to do this is to build a website that will allow anyone to see the name, manifesto, goals and some statistics about your DAO. We will also add a logo to make things cooler 😎
+Today, we'll delve into advanced topics, including:
 
-## 🎯 Mission
+- What is **Internet Identity** and how to use it?
+- Integrating with the Web2 world (eg. by doing HTTP request from your canister).
+- Integrating with other blockchains (e.g. Ethereum and Bitcoin).
 
-Canisters are able to serve web content and websites! We will leverage this feature in this level. Your mission, is to implement a simple website that will allow anyone to see the name, manifesto, goals and some statistics about your DAO. We will do that without using any frontend technology. We will simply use Motoko and some HTML to generate the webpage.
+Mastering those topics will allow you to build more complex and interesting applications on the Internet Computer.
 
-The end result should look something like this:
+## Your tasks ✅
 
-<p align="center"> <img src="../../assets/level_5/webpage_mbc.png"  style="border: 1px solid black;"/> </p>
+> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 2 as completed.
 
-## ✏️ Tasks
+- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
+- You have checked-in with your team and made sure everyone is on track.
+- You follow [Motoko Bootcamp](https://www.instagram.com/motokobootcamp/) on Instagram.
 
-1. Select a logo for the DAO. You will need to find a logo that is available as an SVG file. You can use a website like [FlatIcon](https://www.flaticon.com/fr/).
+## Lectures 🍿
 
-> SVG stands for Scalable Vector Graphics. We will use SVGs because they are basically text files that carry vector information about visuals. This means we don't have to worry about uploading any asset to our canister, we can simply copy the SVG file and paste it directly in our code.
+> Be sure to consult the [Motoko Bootcamp](https://calendar.google.com/calendar/u/0/embed?src=c_1a1c0c95f41c3d5729532726aaa57d96e991c5d3254b0f9e02fdf4d9babf4401@group.calendar.google.com) calendar for the precise schedule of each lecture.
 
-2. Define an immutable variable called `logo` of type `Text` and set it to the value of the SVG file.
-
-> You can copy the content of the SVG file and paste it directly into your code. Ensure that you use single quotes (`) for any quotes within the SVG file and double quotes (") for enclosing the entire text, as Motoko employs double quotes to delineate strings.
-
-To help you move forward, we've defined the following type:
-
-- `DAOInfo` : which represents the information about the DAO. It has the following fields:
-  - `name`: A `Text` representing the name of the DAO.
-  - `manifesto`: A `Text` representing the manifesto of the DAO.
-  - `goals`: An `Array` of `Text` representing the goals of the DAO.
-  - `member`: An `Array` of `Text` representing the members of the DAO.
-  - `logo`: A `Text` representing the logo of the DAO.
-  - `numberOfMembers`: A `Nat` representing the number of members of the DAO.
-
-```motoko
-public type DAOInfo = {
-    name : Text;
-    manifesto : Text;
-    goals : [Text];
-    member : [Text];
-    logo : Text;
-    numberOfMembers : Nat;
-};
-```
-
-3. Implement the function `getStats`. This function takes no parameters and returns a `DAOInfo` object that contains updated information about the DAO.
-
-```motoko
-getStats : shared query () -> async DAOInfo;
-```
-
-To help you move forward, we've defined an helper function `getWebpage()`. The `_getWebpage` function return a `Text` object that contains the formatted webpage.
-
-> For the first time in this adventure, we're encountering a private function. A private function is a function that is only accessible from within the canister. It cannot be called from outside the canister. It's a convention to prefix the name of a private function with an underscore (`_`).
-
-> You will need to uncomment the `getWebpage()` function in the `main.mo` file to use it.
-
-By leveraging the `http.mo` file that is provided in the `src` folder, we've defined the `HttpRequest` and `HttpResponse` types. In Motoko, to serve a webpage, you simply need to implement a `http_request` query function. This function will be called by the Internet Computer when a user tries to access your webpage.
-
-For instance this is how you would implement a `http_request` query function that serves a simple "Hello World" webpage:
-
-```motoko
-public query func http_request(request : HttpRequest) : async HttpResponse {
-    let response = {
-        body = Text.encodeUtf8("Hello world");
-        headers = [("Content-Type", "text/html; charset=UTF-8")];
-        status_code = 200 : Nat16;
-        streaming_strategy = null
-    };
-    return(response)
-};
-```
-
-4. Implement the `http_request` query function. This function takes a `request` of type `HttpRequest` as a parameter and returns a `HttpResponse` object. This function will be used to serve the webpage of your DAO. 
-
-## 📺 Interface
-
-At the end of this level, your canister should implement the following interface:
-```motoko
-actor {
-  getStats : shared query () -> async DAOInfo;
-  http_request : shared query (request : HttpRequest) -> async HttpResponse;
-}
-```
+| Title                                  | Description                                                                            |
+| -------------------------------------- | -------------------------------------------------------------------------------------- |
+| Identity on the Internet Computer </a> | Discover the different ways user can authenticate to your application and hold assets. |
+| Unlock the power of Bitcoin            | Let's talk about how the Internet Computer integrates with other blockchains.          |
+| Building the Level 5                   | Let's code together and build the project for this level.                              |
 
 ## 📚 Resources
 
-| Name         | Type   | URL                                                                                                       | Description                                                                         |
-| ------------ | ------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| HTTP Request | Lesson | [Chapter 13](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-13/CHAPTER-13.MD) | Learn how canisters can be directly accessible fron any browser and serve webpages! |
+This set of resources will help you complete this level and contains useful information for your journey ahead.
+
+[TODO]
+
+## Concepts 🧠
+
+> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. It's crucial to have a clear grasp of these concepts. Consider explaining them to a teammate to assess your understanding.
+
+- Understand the difference between **stable** & **heap** memory.
+- Understand how to use the `stable` keyword and what are the `stables `types.
+- Getting familiar with upgrading a canister.
+- Getting familiar with the common challenges associated with upgrading a canister.
+- Understand the basics of frontend development on the Internet Computer and how to use the JavaScript agent.
+
+## Motoko pill of the day 💊
+
+> The Motoko Playground is a great tool to learn and experiment with Motoko. It's a web based IDE that allows you to write, compile and deplopy Motoko programs directly from your browser. You can access it [here](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/).
+
+<div style="text-align: center;">
+    <img src="../../assets/level_4/guide/motoko_playground.png" style="width: 500px;" />
+</div>
+
+## Meme of the day 🙈
+
+> This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
+
+<div style="text-align: center;">
+    <img src="../../assets/level_4/guide/meme_level_4.jpg" style="width: 500px;" />
+</div>

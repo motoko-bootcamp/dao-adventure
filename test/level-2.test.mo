@@ -1,4 +1,4 @@
-import main "../src/main";
+import main "../levels/level_2/project/main";
 import Types "types";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";

@@ -1,36 +1,69 @@
 # Motoko Bootcamp - Join the Web3 revolution!
 
-<p> <img src="./assets/build_a_dao_in_seven_days.jpeg" alt="Build" /> </p>
+<p> <img src="./assets/readme/build_a_dao_in_seven_days.jpeg" alt="Build" /> </p>
 
-## How to get started? 🚀
+## Your mission 📜
 
-- Make sure to join the [Motoko Bootcamp Discord](https://discord.gg/uAvPEZtD4e) to get help and support from our community.
-- Start this Codespaces by clicking on the green button "Code" and then "Open with Codespaces".
-- Watch [our video to learn how to get started with Motoko Bootcamp](https://www.youtube.com/watch?v=y9bmdjYH-Ew).
+If you want to become one of Web3 hero, you are in the right place. <br/>
+
+<p> <img src="./assets/readme/diploma_mbc.jpg" alt="Build" /> </p>
+
+DAOs are the future of work and human organizations. They are the building blocks of the Web3 revolution. <br/>
+
+Your task is simple, yet challenging. You have 7 days to build an application that leverages the power of DAO on the Internet Computer. <br/>
+
+Are you up for the challenge? If so, the detailed requirements of the challenge are available in the corresponding [project](./levels/level_6/project/PROJECT.MD) folder.
 
 ## How to navigate this repository? 🧭
 
 This repository contains a variety of resources, each serving a specific purpose. Here is a comprehensive list of the resources available, along with a brief explanation of each:
 
 ### Lessons 📚
-This repository contains 13 chapters and 2 appendix. Those lessons will teach the fundamentals of **Motoko**, the **Internet Computer** and **DAOs**. Each lesson contains a README file with the material. 
+
+This repository contains 13 chapters and 2 appendix. Those lessons will teach the fundamentals of **Motoko**, the **Internet Computer** and **DAOs**. Each lesson contains a README file with the material.
 
 For instance, you can check the [the 1st lesson](./lessons/chapter-1/CHAPTER-1.MD).
 
-### Levels 🎮
+### Levels 🏆
 
-This repository contains 5 levels. Each level correspond to a project that you need to complete. Each project will move you closer to the final goal of building a DAO. Each level contains a README file with the necessary instructions to complete the project.
+This repository is divided into 7 levels, from 0 to 6. <br/>
+Each level has a project and a guide that brings you closer to building a DAO. You’ll find clear instructions in the README file for each level. The project is the main deliverable for each level. You’ll need to complete the project to move on to the next level.
 
-For instance, check the [instructions for the level 1](./levels/level_1/README.MD).
+The projects from level 0 to 5 are only training projects and will be corrected by the mentors. The project from level 6 is the final project and what you'll be submitting to get your diploma.
 
-### Source code 🧑‍💻
+### Guide 📖
 
-The source code of the project is located in the `src` folder. This is where you'll be writing your code.
-This folders also contains two files `account.mo` and `http.mo` that you should not modify, those files are imported in the `src/main.mo` file to help you get started.
+For each level you'll find a dedicated guide that contains:
+
+- A list of lectures for this day and their description. A lectures is a live session with a mentor where you'll learn about a specific topic.
+- A list of resources (tutorials, documentation or article) for this day. Those resources are here to help you complete the project for this level.
+- A list of concepts that you should master by the end of the day. Those concepts are here to help you assess your understanding of the material.
+- A list of tasks that you need to complete to finish the level.
+- A Motoko pill. This is a fun fact about Motoko that you can share with your friends.
+- A meme. Those are memes created by previous Motoko Bootcamp student.
+
+For instead, here is the guide for [the 1st level](./levels/level_1/README.MD).
+
+#### Project 📝
+
+For each level you'll find a dedicated project that contains:
+
+- A story about why you are building this project.
+- A list of tasks and function to implement to complete the project.
+- An interface that corresponds to the API of your canister at the end of the level.
+- A set of tests that you can run locally to check if your code is correct. You can run those tests by running the following command in your terminal:
+
+```bash
+mops test level-n
+```
+
+> Those tests are local and won't replace the mandatory submission of your project at the end of each level on the [Motoko Bootcamp Dashboard](https://www.motokobootcamp.com/).
+
+For instance you can check [the project for the 1st level](./levels/level_1/project/PROJECT.MD).
 
 ## How to graduate? 🎓
 
-To graduate from Motoko Bootcamp, you need to complete all the levels of the bootcamp. Each level is a set of tasks that you need to complete. To complete a task, you need to implement the missing code in the `src/main.mo` file. Once you're done, you can run the tests to check if your code is correct. To run the tests, you can run the following command in your terminal:
+To graduate from Motoko Bootcamp, you need to submit all the levels of the bootcamp. Each level is a set of tasks that you need to complete. To complete a task, you need to implement the missing code in the `src/main.mo` file. Once you're done, you can run the tests to check if your code is correct. To run the tests, you can run the following command in your terminal:
 
 ```bash
 mops test level-n
@@ -46,12 +79,14 @@ Head over to the **submit** section and submit the id of the canister you've dep
 
 Once you've completed all the levels, you'll be able to claim your Diploma in the **Diploma** section.
 
+## How to get started with this repository? 🚀
+
 ## Useful links 🔗
 
 - [Website](https://www.motokobootcamp.com/)
 - [Discord](https://discord.gg/uAvPEZtD4e)
 - [Twitter](https://twitter.com/motoko_bootcamp/)
-- [YouTube]()
+- [YouTube](https://www.youtube.com/@motoko_bootcamp)
 - [Instagram](https://www.instagram.com/motokobootcamp/)
 - [TikTok](https://www.tiktok.com/@motoko_bootcamp)
 - [Telegram](https://t.me/+pwW_RfcXsscyMTQ0)
@@ -59,7 +94,10 @@ Once you've completed all the levels, you'll be able to claim your Diploma in th
 
 ## Join us for the next edition 🏕️
 
-We host monthly editions of Motoko Bootcamp. This is a place to brainstorm, collaborate and build the future of DAOs, and other projects on the Internet Computer. Join us for the next edition of Motoko Bootcamp by registering through our [website](https://www.motokobootcamp.com/).
+We host monthly editions of Motoko Bootcamp.
+
+This is a place to brainstorm, collaborate and build the future of DAOs, and other projects on the Internet Computer. Join us for the next edition of Motoko Bootcamp by registering through our [website](https://www.motokobootcamp.com/).
 
 ## Credits 🙏
-An initiative powered and 100% supported by [Code & State](https://codeandstate.com/) - the leading Web3 venture studio.
+
+An initiative powered and 100% supported by [Code & State](https://codeandstate.com/) - the leading Web3 venture studio for the Internet Computer.
