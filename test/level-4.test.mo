@@ -8,7 +8,6 @@ import Bool "mo:base/Bool";
 import Result "mo:base/Result";
 import Principal "mo:base/Principal";
 import { test; suite; expect } "mo:test/async";
-import Account "../src/account";
 
 let daoGlobal = await main.DAO();
 type Member = Types.Member;
@@ -95,7 +94,7 @@ await suite(
             func() : async () {
                 let dao = await main.DAO();
                 let member = await dao.addMember({ age = 5; name = "test" });
-                
+
                 // Let's mint one token just o create a proposal
                 let myPrincipal = await dao.whoami();
                 let myAccount = { owner = myPrincipal; subaccount = null };
@@ -120,7 +119,7 @@ await suite(
                 };
                 // Let's vote - we don't have enough tokens left so it should throw an error
                 let result3 = await dao.vote(proposalId, true);
-                 func show2(a : VoteResult) : Text {
+                func show2(a : VoteResult) : Text {
                     return debug_show (a);
                 };
                 func equal2(a : VoteResult, b : VoteResult) : Bool {

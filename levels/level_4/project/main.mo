@@ -1,17 +1,121 @@
 import Account "account";
 import Result "mo:base/Result";
 import TrieMap "mo:base/TrieMap";
+import Buffer "mo:base/Buffer";
+import HashMap "mo:base/HashMap";
+import Iter "mo:base/Iter";
+import Principal "mo:base/Principal";
 actor class DAO() {
 
     // To implement the voting logic in this level you need to make use of the code implemented in previous levels.
     // That's why we bring back the code of the previous levels here.
+
+    // For the logic of this level we need to bring back all the previous levels
+
+    ///////////////
+    // LEVEL #1 //
+    /////////////
+
+    let name : Text = "Motoko Bootcamp DAO";
+    var manifesto : Text = "Empower the next wave of builders to make the Web3 revolution a reality";
+
+    let goals : Buffer.Buffer<Text> = Buffer.Buffer<Text>(0);
+
+    public shared query func getName() : async Text {
+        return name;
+    };
+
+    public shared query func getManifesto() : async Text {
+        return manifesto;
+    };
+
+    public func setManifesto(newManifesto : Text) : async () {
+        manifesto := newManifesto;
+        return;
+    };
+
+    public func addGoal(newGoal : Text) : async () {
+        goals.add(newGoal);
+        return;
+    };
+
+    public shared query func getGoals() : async [Text] {
+        return Buffer.toArray(goals);
+    };
+
+    ///////////////
+    // LEVEL #2 //
+    /////////////
+
+    public type Member = {
+        name : Text;
+        age : Nat;
+    };
+    public type Result<A, B> = Result.Result<A, B>;
+    public type HashMap<A, B> = HashMap.HashMap<A, B>;
+
+    let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
+
+    public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
+        switch (dao.get(caller)) {
+            case (?member) {
+                return #err("Already a member");
+            };
+            case (null) {
+                dao.put(caller, member);
+                return #ok(());
+            };
+        };
+    };
+
+    public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
+        switch (dao.get(caller)) {
+            case (?member) {
+                dao.put(caller, member);
+                return #ok(());
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
+    };
+
+    public shared ({ caller }) func removeMember() : async Result<(), Text> {
+        switch (dao.get(caller)) {
+            case (?member) {
+                dao.delete(caller);
+                return #ok(());
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
+    };
+
+    public query func getMember(p : Principal) : async Result<Member, Text> {
+        switch (dao.get(p)) {
+            case (?member) {
+                return #ok(member);
+            };
+            case (null) {
+                return #err("Not a member");
+            };
+        };
+    };
+
+    public query func getAllMembers() : async [Member] {
+        return Iter.toArray(dao.vals());
+    };
+
+    public query func numberOfMembers() : async Nat {
+        return dao.size();
+    };
 
     ///////////////
     // LEVEL #3 //
     /////////////
 
     public type Subaccount = Blob;
-    public type Result<A, B> = Result.Result<A, B>;
     public type Account = {
         owner : Principal;
         subaccount : ?Subaccount;
@@ -128,6 +232,11 @@ actor class DAO() {
 
     public shared ({ caller }) func vote(id : Nat, vote : Bool) : async voteResult {
         return #err(#NotImplemented);
+    };
+
+    /// DO NOT REMOVE - Used for testing
+    public shared query ({ caller }) func whoami() : async Principal {
+        return caller;
     };
 
 };
