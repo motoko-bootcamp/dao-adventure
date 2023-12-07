@@ -82,7 +82,7 @@ public type CreateProposalResult = Result<CreateProposalOk, CreateProposalErr>;
 > To avoid external malicious users from creating proposals and causing confusion, you will only allow proposals to be created by members of the DAO, who own at least 1 tokens. Each proposal creation will cost 1 token and will be burned.
 
 ```motoko
-createProposal : shared (manifest : Text) -> async createProposalResult;
+createProposal : shared (manifest : Text) -> async CreateProposalResult;
 ```
 
 4. Implement the `getProposal` query function. This function takes a `Nat` as an argument and returns the proposal with the corresponding identifier as a `?Proposal`. If no proposal exists with the given identifier, it should return `null`.
@@ -93,7 +93,7 @@ getProposal : shared (id : Nat) -> async ?Proposal;
 
 To help you moving forward we've defined the following types:
 
-- `VoteOk` : Represents the case when a vote is accepted. The `voteOk` type is a `Variant` type with the following cases:
+- `VoteOk` : Represents the case when a vote is accepted. The `VoteOk` type is a `Variant` type with the following cases:
 
   - `ProposalAccepted`: Represents the case when a proposal has been accepted after a vote.
   - `ProposalRefused`: Represents the case when a proposal has been refused after a vote.
@@ -107,7 +107,7 @@ To help you moving forward we've defined the following types:
   };
   ```
 
-- `VoteErr` : Represents the possible errors when submitting a vote. The `voteErr` type is a `Variant` type with the following cases:
+- `VoteErr` : Represents the possible errors when submitting a vote. The `VoteErr` type is a `Variant` type with the following cases:
 
   - `ProposalNotFound`: Represents the error when a proposal with the given identifier doesn't exist.
   - `AlreadyVoted`: Represents the error when a member has already voted on a proposal.
@@ -134,13 +134,9 @@ To help you moving forward we've defined the following types:
   public type VoteResult = Result<VoteOk, VoteErr>;
   ```
 
-### Task 5: Allow members to vote on proposals
-
-The idea in this section is to allow members to vote on proposals. In this section to keep things simple, the voting power of each member is
-
 5. Implement the `vote` function that takes a `Nat` and a `Bool` as arguments and returns a `VoteResult` type. This function will be used to vote on a proposal. The `Nat` represents the identifier of the proposal and the `Bool` represents the vote. If the `Bool` is `true`, the vote is an `Up` vote. If the `Bool` is `false`, the vote is a `Down` vote. The function should perfom necessary checks before accepting a vote.
 
-> To avoid external malicious users from voting on proposals and causing confusion, you will only allow members to vote on proposals that exist and that are still open for voting. Each vote will cost 1 token and will be burned.
+> To avoid external malicious users from voting on proposals and causing confusion, you will only allow members to vote on proposals that exist and that are still open for voting. Each vote will cost 1 token and will be burned. Make sure to perform the necessary checks before accepting a vote.
 
 ```motoko
 vote : shared (id : Nat, vote : Bool) -> async VoteResult;
@@ -152,7 +148,7 @@ At the end of this level, your canister should implement the following interface
 
 ```motoko
 actor {
-    createProposal : shared (manifest : Text) -> async createProposalResult;
+    createProposal : shared (manifest : Text) -> async CreateProposalResult;
     getProposal : shared (id : Nat) -> async ?Proposal;
     vote : shared (id : Nat, vote : Bool) -> async VoteResult;
 }

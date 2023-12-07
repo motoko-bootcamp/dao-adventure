@@ -193,8 +193,8 @@ It's important to note that these authentication methods are mainly relevant for
 
 ### Even after brainstorming and looking at examples. I don't have any ideas, what should I build?
 
-I got it, sometimes inspiration takes a long time to come, don't worry. 
-In that case, try build this sample project: 
+I got it, sometimes inspiration takes a long time to come, don't worry.
+In that case, try build this sample project: [TODO]
 
 ## Graduation
 

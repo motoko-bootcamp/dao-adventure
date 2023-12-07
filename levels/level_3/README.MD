@@ -2,9 +2,7 @@
 
 ## Introduction
 
-Welcome back for **Day 3!** <br/>
-
-Welcome to Day 3 of the **Motoko Bootcamp**. As we near the middle of the week, we hope you're all advancing, acquiring new skills, and enjoying the journey.
+Welcome back for **Day 3!** <br/> As we near the middle of the week, we hope you're all advancing, acquiring new skills, and enjoying the journey.
 
 Today we will talk about two fundamental topics:
 
@@ -36,11 +34,11 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 This set of resources will help you complete this level and contains useful information for your journey ahead.
 
-| Name          | Type          | URL                                                                                                       | Description                                                   |
-| ------------- | ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Handle errors | Lesson        | [Chapter 9](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-9/CHAPTER-9.MD)    | Discover how to handle errors in Motoko                       |
-| Intercanister | Lesson        | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform intercanister calls in Motoko            |
-| Result        | Documentation | [Base Library - Result](https://internetcomputer.org/docs/current/motoko/main/base/Result)                | The official documentation for the `Result` library in Motoko |
+| Name          | Type   | URL                                                                                                       | Description                                        |
+| ------------- | ------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Handle errors | Lesson | [Chapter 9](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-9/CHAPTER-9.MD)    | Discover how to handle errors in Motoko            |
+| Identity      | Lesson | [Chapter 10](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-10/CHAPTER-10.MD) | Learn how identity works on the Internet Computer  |
+| Intercanister | Lesson | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform intercanister calls in Motoko |
 
 ## Concepts 🧠
 
@@ -49,21 +47,16 @@ This set of resources will help you complete this level and contains useful info
 - Understand that mutable state cannot be shared outside of an actor.
 - Understand how to perform intercanister calls in Motoko.
 - Understand what is a `Principal` and how it's used on the Internet Computer.
-- Getting comfortable with the `Result` type and how to use it.
 - Getting comfortable with the concept of `trap` in Motoko and understand the challenges of non atomic functions.
 
 ## Motoko pill of the day 💊
 
 > Motoko was created by Andreas Rossberg who also co-created WebAssembly. He is the father of Motoko and a real genius that worked at the DFINITY Foundation in the early days. Here is [his official video](https://www.youtube.com/watch?v=4eSceDOS-Ms) presentation. Thanks Andreas!
 
-<div style="text-align: center;">
-    <img src="../../assets/level_3/guide/motoko.webp" style="width: 500px;" />
-</div>
+<p align="center"> <img src="../../assets/level_3/guide/motoko.webp" style="width: 500px;" /></p>
 
 ## Meme of the day 🙈
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<div style="text-align: center;">
-    <img src="../../assets/level_3/guide/meme_level_3.png" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_3/guide/meme_level_3.png" style="width: 500px;" /></p>

@@ -51,6 +51,7 @@ This set of resources will help you complete this level and contains useful info
 - Understand how the Internet Computer enables new use cases for **DAOs** and how to leverage them.
 - Become familiar with the Network Nervous System (**NNS**), it's importance for the Internet Computer and how it works.
 - Becoming familiar with primitive and non-primitive types in Motoko such as `Nat`, `Int`, `Text`, `Bool`, `Array`, `Buffer`, `Tuples`, `Objects`, `Variants`, `Optionals`, `Generics` and `Shared` types.
+- Getting comfortable with the `Result` type and how to use it.
 
 ## Motoko pill of the day 💊
 
