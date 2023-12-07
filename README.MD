@@ -61,24 +61,6 @@ mops test level-n
 
 For instance you can check [the project for the 1st level](./levels/level_1/project/PROJECT.MD).
 
-## How to graduate? 🎓
-
-To graduate from Motoko Bootcamp, you need to submit all the levels of the bootcamp. Each level is a set of tasks that you need to complete. To complete a task, you need to implement the missing code in the `src/main.mo` file. Once you're done, you can run the tests to check if your code is correct. To run the tests, you can run the following command in your terminal:
-
-```bash
-mops test level-n
-```
-
-With n being the number of the level you want to test.
-
-Once you've succesfuly passed the local test, it's time to put your canister to the real test, on the Internet Computer. To do so, you need to deploy your canister on the Internet Computer and verify it using the online dashboard on [Motoko Bootcamp](https://www.motokobootcamp.com/).
-
-Head over to the **submit** section and submit the id of the canister you've deployed on the Internet Computer. If your canister passes the tests, you'll be able to move on to the next level.
-
-<p> <img src="./assets/submit_mbc.png" alt="Submit" width="500"/> </p>
-
-Once you've completed all the levels, you'll be able to claim your Diploma in the **Diploma** section.
-
 ## How to get started with this repository? 🚀
 
 You have two available options:
@@ -99,12 +81,6 @@ You have two available options:
 - [TikTok](https://www.tiktok.com/@motoko_bootcamp)
 - [Telegram](https://t.me/+pwW_RfcXsscyMTQ0)
 - [OpenChat](https://oc.app/community/kvmak-aaaaa-aaaar-atmsq-cai/channel/296950142123807371690206543790609462636/?ref=lfwpr-yyaaa-aaaaf-abvzq-cai)
-
-## Join us for the next edition 🏕️
-
-We host monthly editions of Motoko Bootcamp.
-
-This is a place to brainstorm, collaborate and build the future of DAOs, and other projects on the Internet Computer. Join us for the next edition of Motoko Bootcamp by registering through our [website](https://www.motokobootcamp.com/).
 
 ## Credits 🙏
 
