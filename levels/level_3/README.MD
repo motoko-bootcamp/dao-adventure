@@ -13,7 +13,7 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 2 as completed.
+> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 3 as completed.
 
 - You have checked a [few projects from previous Motoko Bootcamp students](https://github.com/motoko-bootcamp/awesome-students) and have a started to gather ideas for your own final project.
 - You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).

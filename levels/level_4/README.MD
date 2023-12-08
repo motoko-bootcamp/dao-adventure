@@ -13,7 +13,7 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 2 as completed.
+> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 4 as completed.
 
 - You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 - You have checked-in with your team and made sure everyone is on track.

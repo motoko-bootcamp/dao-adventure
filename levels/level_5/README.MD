@@ -14,7 +14,7 @@ Mastering those topics will allow you to build more complex and interesting appl
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 2 as completed.
+> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 5 as completed.
 
 - You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 - You have checked-in with your team and made sure everyone is on track.
@@ -50,10 +50,11 @@ This set of resources will help you complete this level and contains useful info
 
 ## Motoko pill of the day 💊
 
-> The Motoko Playground is a great tool to learn and experiment with Motoko. It's a web based IDE that allows you to write, compile and deplopy Motoko programs directly from your browser. You can access it [here](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/).
+> The first Motoko Bootcamp took place online in 2022. After completing the program, graduates received a unique NFT - a mortarboard hat for their avatars, created especially for the event. The project isn't being updated now, but you can take a look at it [here](https://x3ul6-2aaaa-aaaah-abjda-cai.ic0.app/). We're looking forward to bring back similar features in future Motoko Bootcamps.
 
 <p align="center">
-    <img src="../../assets/level_4/guide/motoko_playground.png" style="width: 500px;" />
+    <img src="../../assets/level_5/guide/hat_equipped.png" style="width: 300px; display: inline;" />
+    <img src="../../assets/level_5/guide/hat_nft.png" style="width: 300px; display: inline;" />
 </p>
 
 ## Meme of the day 🙈
