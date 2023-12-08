@@ -47,16 +47,12 @@ This set of resources will help you complete this level and contains useful info
 
 ## Motoko pill of the day 💊
 
-> The Motoko Diploma is a certificate that you can get by completing the Motoko Bootcamp. It is minted as an NFT on the Internet Computer and will give you access to future events and airdrops and other perks.
+> The Motoko Diploma is a certificate that you get by completing the Motoko Bootcamp. It is minted as an NFT on the Internet Computer and will give you access to future events, airdrops and other perks.
 
-<div style="text-align: center;">
-    <img src="../../assets/level_6/guide/diploma_mbc.jpg" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_6/guide/diploma_mbc.jpg" style="width: 500px;" /></p>
 
 ## Meme of the day 🙈
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<div style="text-align: center;">
-    <img src="../../assets/level_6/guide/meme_level_6.png" style="width: 500px;" />
-</div>
+<p align="center"><img src="../../assets/level_6/guide/meme_level_6.png" style="width: 500px;" /></p>

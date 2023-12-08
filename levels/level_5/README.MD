@@ -61,5 +61,5 @@ This set of resources will help you complete this level and contains useful info
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
 <p align="center">
-    <img src="../../assets/level_4/guide/meme_level_4.jpg" style="width: 500px;" />
+    <img src="../../assets/level_5/guide/meme_level_5.jpg" style="width: 500px;" />
 </p>

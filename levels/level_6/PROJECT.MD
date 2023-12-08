@@ -202,7 +202,7 @@ To graduate you must:
 
 - Complete the DAO adventure (Level 0 to 5) and submit all your projects on [motokobootcamp.com](https://motokobootcamp.com/).
 - Build and deploy your final project on the Internet Computer, not on the local network or the playground.
-- Publish your project on GitHub and share the link on the [Motoko Bootcamp Discord](https://discord.gg/2vq8T5k9).
+- Publish your project on GitHub and make it open source.
 
 Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
 
