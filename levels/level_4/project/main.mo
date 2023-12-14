@@ -1,10 +1,15 @@
 import Account "account";
+import Array "mo:base/Array";
 import Result "mo:base/Result";
 import TrieMap "mo:base/TrieMap";
 import Buffer "mo:base/Buffer";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
 import Principal "mo:base/Principal";
+import Nat "mo:base/Nat";
+import Hash "mo:base/Hash";
+import Trie "mo:base/Trie";
+import Option "mo:base/Option";
 actor class DAO() {
 
     // To implement the voting logic in this level you need to make use of the code implemented in previous levels.
@@ -171,12 +176,29 @@ actor class DAO() {
         };
     };
 
+    func _balanceOf(account : Account) : Nat {
+        return switch (ledger.get(account)) {
+            case (null) { 0 };
+            case (?some) { some };
+        };
+    };
+
     public query func totalSupply() : async Nat {
         var total = 0;
         for (balance in ledger.vals()) {
             total += balance;
         };
         return total;
+    };
+
+    // burn the specified amount from the defaultAccount of the specified principal
+    // @trap if the defaultAccount has less token than the burned Amount
+    func _burnTokens(caller : Principal, burnAmount : Nat) {
+        let defaultAccount = { owner = caller; subaccount = null };
+        switch (ledger.get(defaultAccount)) {
+            case (null) { return };
+            case (?some) { ledger.put(defaultAccount, some - burnAmount) };
+        };
     };
 
     ///////////////
@@ -202,10 +224,9 @@ actor class DAO() {
     public type CreateProposalErr = {
         #NotDAOMember;
         #NotEnoughTokens;
-        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
     };
 
-    public type createProposalResult = Result<CreateProposalOk, CreateProposalErr>;
+    public type CreateProposalResult = Result<CreateProposalOk, CreateProposalErr>;
 
     public type VoteOk = {
         #ProposalAccepted;
@@ -214,29 +235,158 @@ actor class DAO() {
     };
 
     public type VoteErr = {
+        #NotDAOMember;
         #ProposalNotFound;
+        #NotEnoughTokens;
         #AlreadyVoted;
         #ProposalEnded;
-        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
     };
 
     public type voteResult = Result<VoteOk, VoteErr>;
 
-    public shared ({ caller }) func createProposal(manifest : Text) : async createProposalResult {
-        return #err(#NotImplemented);
+    var nextProposalId : Nat = 0;
+    let proposals = TrieMap.TrieMap<Nat, Proposal>(Nat.equal, Hash.hash);
+
+    // Returns a boolean indicating if the specified principal is a member of our DAO.
+    func _isMemberDAO(p : Principal) : Bool {
+        switch (dao.get(p)) {
+            case (null) {
+                return false;
+            };
+            case (?member) {
+                return true;
+            };
+        };
+    };
+
+    // Returns a boolean indicating if the specified principal has n or more token.
+    func _hasEnoughToken(p : Principal, n : Nat) : Bool {
+        let defaultAccount : Account = {
+            owner = p;
+            subaccount = null;
+        };
+        let balance = _balanceOf(defaultAccount);
+        if (n > balance) {
+            return false;
+        };
+        return true;
+    };
+
+    public shared ({ caller }) func createProposal(manifest : Text) : async CreateProposalResult {
+        // Check that the caller is a member
+        if (not (_isMemberDAO(caller))) {
+            return #err(#NotDAOMember);
+        };
+        // Check that the call has enough token
+        if (not (_hasEnoughToken(caller, 1))) {
+            return #err(#NotEnoughTokens);
+        };
+        let currentId = nextProposalId;
+        let proposal : Proposal = {
+            id = currentId;
+            status = #Open;
+            manifest;
+            votes = 0;
+            voters = [];
+        };
+        proposals.put(currentId, proposal);
+        _burnTokens(caller, 1);
+        nextProposalId += 1;
+        return #ok(currentId);
     };
 
     public query func getProposal(id : Nat) : async ?Proposal {
-        return null;
+        return proposals.get(id);
+    };
+
+    func _isProposalOpen(proposal : Proposal) : Bool {
+        switch (proposal.status) {
+            case (#Open) {
+                return true;
+            };
+            case (_) {
+                return false;
+            };
+        };
+    };
+
+    func _hasAlreadyVoted(p : Principal, proposal : Proposal) : Bool {
+        for (voter in proposal.voters.vals()) {
+            if (voter == p) {
+                return true;
+            };
+        };
+        return false;
     };
 
     public shared ({ caller }) func vote(id : Nat, vote : Bool) : async voteResult {
-        return #err(#NotImplemented);
-    };
+        // Check that the caller is a member
+        if (not (_isMemberDAO(caller))) {
+            return #err(#NotDAOMember);
+        };
+        // Check that the caller has enough token
+        if (not (_hasEnoughToken(caller, 1))) {
+            return #err(#NotEnoughTokens);
+        };
+        switch (proposals.get(id)) {
+            case (null) {
+                return #err(#ProposalNotFound);
+            };
+            case (?proposal) {
+                if (not (_isProposalOpen(proposal))) {
+                    return #err(#ProposalEnded);
+                };
+                if (_hasAlreadyVoted(caller, proposal)) {
+                    return #err(#AlreadyVoted);
+                };
 
-    /// DO NOT REMOVE - Used for testing
-    public shared query ({ caller }) func whoami() : async Principal {
-        return caller;
+                let newVotes = switch (vote) {
+                    case (true) {
+                        proposal.votes + 1;
+                    };
+                    case (false) {
+                        proposal.votes - 1;
+                    };
+                };
+
+                let newStatus = switch (newVotes) {
+                    case (10) {
+                        #Accepted;
+                    };
+                    case (-10) {
+                        #Rejected;
+                    };
+                    case (_) {
+                        #Open;
+                    };
+                };
+
+                let newVoters = Array.append<Principal>(proposal.voters, [caller]);
+
+                let newProposal : Proposal = {
+                    id = proposal.id;
+                    status = newStatus;
+                    manifest = proposal.manifest;
+                    votes = newVotes;
+                    voters = newVoters;
+                };
+
+                proposals.put(proposal.id, newProposal);
+
+                let returnValue = switch (newStatus) {
+                    case (#Open) {
+                        #ProposalOpen;
+                    };
+                    case (#Accepted) {
+                        #ProposalAccepted;
+                    };
+                    case (#Rejected) {
+                        #ProposalRefused;
+                    };
+                };
+                return #ok(returnValue);
+            };
+        };
     };
 
 };
