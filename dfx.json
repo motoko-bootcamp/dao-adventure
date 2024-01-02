@@ -1,23 +1,23 @@
 {
   "canisters": {
-    "level_1": {
-      "main": "levels/level_1/project/main.mo",
+    "project_1": {
+      "main": "days/day_1/project/main.mo",
       "type": "motoko"
     },
-    "level_2": {
-      "main": "levels/level_2/project/main.mo",
+    "project_2": {
+      "main": "days/day_2/project/main.mo",
       "type": "motoko"
     },
-    "level_3": {
-      "main": "levels/level_3/project/main.mo",
+    "project_3": {
+      "main": "days/day_3/project/main.mo",
       "type": "motoko"
     },
-    "level_4": {
-      "main": "levels/level_4/project/main.mo",
+    "project_4": {
+      "main": "days/day_4/project/main.mo",
       "type": "motoko"
     },
-    "level_5": {
-      "main": "levels/level_5/project/main.mo",
+    "project_5": {
+      "main": "days/day_5/project/main.mo",
       "type": "motoko"
     }
   },
