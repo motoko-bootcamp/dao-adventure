@@ -13,10 +13,10 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 4 as completed.
+> Those are the tasks you need to complete today.
 
-- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 - You have checked-in with your team and made sure everyone is on track.
+- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 - You follow [Motoko Bootcamp](https://www.instagram.com/motokobootcamp/) on Instagram.
 
 ## Lectures 🍿
@@ -31,7 +31,7 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 
 ## 📚 Resources
 
-This set of resources will help you complete this level and contains useful information for your journey ahead.
+> This set of resources will help you complete this level.
 
 | Name                                 | Type          | URL                                                                                                       | Description                                                               |
 | ------------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ This set of resources will help you complete this level and contains useful info
 
 ## Concepts 🧠
 
-> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. It's crucial to have a clear grasp of these concepts. Consider explaining them to a teammate to assess your understanding.
+> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. Consider explaining them to a teammate to assess your understanding.
 
 - Understand the difference between **stable** & **heap** memory.
 - Understand how to use the `stable` keyword and what are the `stables `types.
@@ -49,7 +49,7 @@ This set of resources will help you complete this level and contains useful info
 - Getting familiar with the common challenges associated with upgrading a canister.
 - Understand the basics of frontend development on the Internet Computer and how to use the JavaScript agent.
 
-## Motoko pill of the day 💊
+## Motoko pill 💊
 
 > The Motoko Playground is a great tool to learn and experiment with Motoko. It's a web based IDE that allows you to write, compile and deplopy Motoko programs directly from your browser. You can access it [here](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/).
 

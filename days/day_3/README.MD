@@ -16,10 +16,10 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 > This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 3 as completed.
 
-- You have checked a [few projects from previous Motoko Bootcamp students](https://github.com/motoko-bootcamp/awesome-students) and have a started to gather ideas for your own final project.
-- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
+
 - You have checked-in with your teams and make sure everyone is on track.
-- You follow [Motoko Bootcamp](https://twitter.com/motoko_bootcamp) on Twitter.
+- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
+- You follow [Motoko Bootcamp](https://www.youtube.com/@motoko_bootcamp) on YouTube.
 
 ## Lectures 🍿
 
@@ -33,7 +33,7 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 ## 📚 Resources
 
-This set of resources will help you complete this level and contains useful information for your journey ahead.
+> This set of resources will help you complete this level.
 
 | Name          | Type   | URL                                                                                                       | Description                                        |
 | ------------- | ------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
@@ -43,14 +43,14 @@ This set of resources will help you complete this level and contains useful info
 
 ## Concepts 🧠
 
-> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. It's crucial to have a clear grasp of these concepts. Consider explaining them to a teammate to assess your understanding.
+> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. Consider explaining them to a teammate to assess your understanding.
 
 - Understand that mutable state cannot be shared outside of an actor.
 - Understand how to perform intercanister calls in Motoko.
 - Understand what is a `Principal` and how it's used on the Internet Computer.
 - Getting comfortable with the concept of `trap` in Motoko and understand the challenges of non atomic functions.
 
-## Motoko pill of the day 💊
+## Motoko pill  💊
 
 > Motoko was created by Andreas Rossberg who also co-created WebAssembly. He is the father of Motoko and a real genius that worked at the DFINITY Foundation in the early days. Here is [his official video](https://www.youtube.com/watch?v=4eSceDOS-Ms) presentation. Thanks Andreas!
 

@@ -10,11 +10,11 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Day 2 as completed.
+> Those are the tasks you need to complete today.
 
-- You have checked a [few projects from previous Motoko Bootcamp students](https://github.com/motoko-bootcamp/awesome-students) to collect few ideas for your final project.
-- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 - You have checked-in with your teams and made sure everyone is on track.
+- You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
+- You follow [Motoko Bootcamp](https://twitter.com/motoko_bootcamp) on Twitter.
 
 ## Lectures 🍿
 
@@ -28,9 +28,8 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 ## Resources 📚
 
-> This set of resources will help you complete this level and contains useful information for your journey ahead.
+> This set of resources will help you complete this level.
 
-This set of resources will help you complete this level and contains useful information for your journey ahead.
 
 | Name                       | Type          | URL                                                                                                     | Description                                                                    |
 | -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -43,7 +42,7 @@ This set of resources will help you complete this level and contains useful info
 
 ## Concepts 🧠
 
-> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. It's crucial to have a clear grasp of these concepts. Consider explaining them to a teammate to assess your understanding.
+> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. Consider explaining them to a teammate to assess your understanding.
 
 - Understand what is a **module** in Motoko, how to import and use them.
 - Understand what is the **Base Library** and how to use it.
@@ -53,7 +52,7 @@ This set of resources will help you complete this level and contains useful info
 - Becoming familiar with primitive and non-primitive types in Motoko such as `Nat`, `Int`, `Text`, `Bool`, `Array`, `Buffer`, `Tuples`, `Objects`, `Variants`, `Optionals`, `Generics` and `Shared` types.
 - Getting comfortable with the `Result` type and how to use it.
 
-## Motoko pill of the day 💊
+## Motoko pill 💊
 
 > On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://opensea.io/collection/motoko-ghosts).
 

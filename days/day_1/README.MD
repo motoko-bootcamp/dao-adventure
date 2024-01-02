@@ -11,9 +11,9 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 ## Your tasks ✅
 
-> This is a checklist of the tasks you need to complete today. You can do more if you want, but this is the minimum required to consider Level 1 as completed.
+> Those are the tasks you need to complete today.
 
-- You have joined a team and met with your teammates.
+- You have joined a team and met your teammates.
 - You have your environment set up and ready to deploy applications on the Internet Computer.
 - You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 
@@ -30,7 +30,7 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 ## Resources 📚
 
-> This set of resources will help you complete this level and contains useful information for your journey ahead.
+> This set of resources will help you complete this level.
 
 | Name                        | Type          | URL                                                                                                       | Description                                                            |
 | --------------------------- | ------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 ## Concepts 🧠
 
-> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. It's crucial to have a clear grasp of these concepts. Consider explaining them to a teammate to assess your understanding.
+> This is a list of key concepts for our study. Before your day ends, please review this list and ensure you've covered each item. Consider explaining them to a teammate to assess your understanding.
 
 - Understand what is a **canister** and how to deploy one on the **Internet Computer**.
 - Understand what **cycles** are and how to top-up your **canister**.
@@ -64,4 +64,4 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 > This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
 
-<p align="center"><img src="../../assets/day_1/guide/meme_level_1.jpg" style="width: 500px;" /></p>
+<p align="center"><img src="../../assets/day_1/guide/meme_day_1.jpg" style="width: 500px;" /></p>
