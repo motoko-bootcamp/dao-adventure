@@ -7,7 +7,7 @@
 - **Motoko Bootcamp Dashboard**: [https://www.motokobootcamp.com/](https://www.motokobootcamp.com/) (Click on **Login** to access)
 - **Repository**: [https://github.com/motoko-bootcamp/dao-adventure-training](https://github.com/motoko-bootcamp/dao-adventure-training)
 - **Motoko Bootcamp Discord**: [https://discord.gg/qEF2W3dBrd](https://discord.gg/qEF2W3dBrd)
-- **Notion guide**: _(Notion guide link not provided)_
+- **Notion guide**: [https://tomahawkvc.notion.site/Motoko-Bootcamp-Training-8d458e52c20644f5a5b2e222705bfc64?pvs=4](https://tomahawkvc.notion.site/Motoko-Bootcamp-Training-8d458e52c20644f5a5b2e222705bfc64?pvs=4)
 
 ## Training 🏋️
 
