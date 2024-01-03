@@ -29,7 +29,7 @@ You have two available options:
 
 2. Run this repository locally. You'll need to install the [DFINITY Canister SDK](https://sdk.dfinity.org/docs/quickstart/local-quickstart.html) to do so and setup your environment. You can find a detailed guide on how to do so [here](https://www.youtube.com/watch?v=DTDP7WYU07w). Then simply download this repository and open it in your favorite IDE.
 
-Once the repository has been successfully opened (using your browser or locally) you are ready to start your training. 
+Once the repository has been successfully opened (using your browser or locally) you are ready to start your training.
 
 ## How to use this repository? 🤔
 
@@ -81,11 +81,11 @@ For each training day, navigate to the designated folder. For example, on day 1,
 
 Here, you'll find a piece of code that's already been started for you. Your task is to complete it.
 
-![Screenshot 2024-01-03 at 09.11.26.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d225298b-dc57-4d8e-b3df-b1fe4edf46dd/de3a99fb-c13f-41e4-ae68-856f1c60cadd/Screenshot_2024-01-03_at_09.11.26.png)
+![Screenshot 2024-01-03 at 09.11.26.png](./assets/README/readme_1.png)
 
 It's a good idea to keep the list of tasks visible on the right side of your screen while you work, as shown in the screenshot below. This way, you can easily refer to them as you progress.
 
-![Screenshot 2024-01-03 at 09.13.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d225298b-dc57-4d8e-b3df-b1fe4edf46dd/1a4cec59-d13f-479f-a101-c52d85c88b53/Screenshot_2024-01-03_at_09.13.36.png)
+![Screenshot 2024-01-03 at 09.13.36.png](./assets/README/readme_2.png)
 
 ### Deploy and submit ✅
 
@@ -134,11 +134,11 @@ It’s important to understand that you can deploy your project on 3 different l
 
 After deploying your project, make sure to record your Canister ID.
 
-![Screenshot 2024-01-03 at 11.09.17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d225298b-dc57-4d8e-b3df-b1fe4edf46dd/d02bae20-86b2-403c-ac71-77711914c64c/Screenshot_2024-01-03_at_11.09.17.png)
+![Screenshot 2024-01-03 at 11.09.17.png](./assets/README/readme_3.png)
 
 Then, log in to the Motoko Bootcamp Dashboard, section **Submit,** Level corresponding to the project you are working on and paste the **Canister ID**. Click on **Submit**. Within 10-20 seconds, you should receive a message confirming the submission or indicating an error.
 
-![Screenshot 2024-01-03 at 11.10.24.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d225298b-dc57-4d8e-b3df-b1fe4edf46dd/8198e664-9072-415b-a332-4f5362f10bb8/Screenshot_2024-01-03_at_11.10.24.png)
+![Screenshot 2024-01-03 at 11.10.24.png](./assets/README/readme_4.png)
 
 If your submission is correct, you can move on to the next project. If you are facing an issue, it’s time to rework your code!
 
