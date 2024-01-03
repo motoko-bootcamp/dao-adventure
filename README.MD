@@ -21,13 +21,15 @@ You have two available options:
 
 1. Run this repository directly in your browser. This is the easiest way to get started. You can do so by clicking on the following button:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/motoko-bootcamp/dao-adventure-training)
-
 > **GitPod is a cloud-based development environment. We will use it to access and edit the project files directly from the web browser. That way you don’t have to install any additional software or worry about setting up your development environment locally.**
+
+> If you are facing issues with GitPod: 1. Try switching to another browser (Chrome is recommended) 2. Try to empty your cache and do a hard reset. 3. Try using Incognito Mode.
+
+> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/motoko-bootcamp/dao-adventure-training)
 
 2. Run this repository locally. You'll need to install the [DFINITY Canister SDK](https://sdk.dfinity.org/docs/quickstart/local-quickstart.html) to do so and setup your environment. You can find a detailed guide on how to do so [here](https://www.youtube.com/watch?v=DTDP7WYU07w). Then simply download this repository and open it in your favorite IDE.
 
-Once the repository has been successfully opened (using your browser or locally) you are ready to start your training!
+Once the repository has been successfully opened (using your browser or locally) you are ready to start your training. 
 
 ## How to use this repository? 🤔
 
