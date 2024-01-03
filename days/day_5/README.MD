@@ -1,6 +1,6 @@
 # Day 5️⃣
 
-## Introduction
+## 💭 Story
 
 Day 5! You can be proud of yourself. We are at the end of the training.
 

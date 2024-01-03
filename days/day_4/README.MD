@@ -1,6 +1,6 @@
 # Day 4️⃣
 
-## Introduction
+## 💭 Story
 
 Welcome to Day 4 of the Motoko Bootcamp.
 Kudos to you for persevering through the first 3 days - you're a true hero! 🦸

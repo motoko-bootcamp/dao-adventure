@@ -2,7 +2,7 @@
 
 <img src="../../../assets/day_3/project/cover.png"  style="width: 100%;"/>
 
-## Introduction
+## 💭 Story
 
 Walking through the Academy, you hear noises coming behind a door. You decide to see for yourself and soon find a giant room.
 

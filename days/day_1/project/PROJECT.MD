@@ -2,7 +2,7 @@
 
 <img src="../../../assets/day_1/project/cover.png"  style="width: 100%;" />
 
-## Introduction
+## 💭 Story 
 
 "**Welcome to the Motoko Academy - we are thrilled to have you here!**" As you stand at the entrance, a large luminous hologram greets you.
 

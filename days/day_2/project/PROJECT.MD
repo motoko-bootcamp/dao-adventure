@@ -2,7 +2,7 @@
 
 <img src="../../../assets/day_2/project/cover.png"  style="width: 100%;"/>
 
-## Introduction
+## 💭 Story
 
 After a few days at the Academy, you realize that the power of the institution is not in the code or books but in its people. Everywhere you look you see students having intense and passionate conversation. Some are even brainstorming and coding together. The atmosphere is electric and you can feel the energy in the air.
 
