@@ -1,5 +1,7 @@
 # Motoko Bootcamp - DAO Adventure - Training
 
+![Screenshot 2024-01-03 at 09.13.36.png](./assets/README/cover.png)
+
 > This repository is a training for the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
 
 ## Important resources 📌
@@ -9,7 +11,7 @@
 - **Motoko Bootcamp Discord**: [https://discord.gg/qEF2W3dBrd](https://discord.gg/qEF2W3dBrd)
 - **Notion guide**: [https://tomahawkvc.notion.site/Motoko-Bootcamp-Training-8d458e52c20644f5a5b2e222705bfc64?pvs=4](https://tomahawkvc.notion.site/Motoko-Bootcamp-Training-8d458e52c20644f5a5b2e222705bfc64?pvs=4)
 
-## Training 🏋️
+## Motivation 💭
 
 **DAOs** are a new form of organization. **The Internet Computer** is a new platform. **Motoko** is a new language. Yes, that’s a lot of new concepts. Learning new concepts takes time. Actually, even more than time, it requires training - intense and focused training. This is what the **training phase** is about: you will discover and build 5 projects in 5 days.
 
@@ -33,7 +35,7 @@ Once the repository has been successfully opened (using your browser or locally)
 
 ## How to use this repository? 🤔
 
-### The daily guides 📜
+### Daily guides 📜
 
 For each of the 5 days of the training, you will find a dedicated daily guide. This guide contains:
 
@@ -54,7 +56,7 @@ Here are the 5 daily guides:
 - [Day 4.](https://github.com/motoko-bootcamp/dao-adventure-training/tree/main/days/day_4)
 - [Day 5.](https://github.com/motoko-bootcamp/dao-adventure-training/tree/main/days/day_5)
 
-### The daily projects ⭐️
+### Daily projects ⭐️
 
 During each of the 5 days of training, you'll get to work on a project. You'll need to build it and then submit it on the Motoko Bootcamp dashboard. Each project is set up in a similar way:
 
