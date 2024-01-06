@@ -54,7 +54,7 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 ## Motoko pill 💊
 
-> On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://opensea.io/collection/motoko-ghosts).
+> On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://entrepot.app/marketplace/motoko).
 
 <p align="center"><img src="../../assets/day_2/guide/motoko_ghosts.jpeg" style="width: 500px;" /></p>
 
