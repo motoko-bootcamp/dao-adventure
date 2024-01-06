@@ -35,7 +35,7 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 
 | Name                                 | Type          | URL                                                                                                       | Description                                                               |
 | ------------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Upgrading a canister                 | Lesson        | [Chapter 12](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-12/CHAPTER-12.MD) | Learn how canisters can be upgraded and the challenges that come with it. |
+| Upgrading a canister                 | Lesson        | [Chapter 12](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-12/CHAPTER-12.MD) | Learn how canisters can be upgraded and the challenges that come with it. |
 | Building a web frontend              | Documentation | [Click Here](https://internetcomputer.org/docs/current/developer-docs/frontend/)                          | Learn how to build a frontend on the Internet Computer.                   |
 | Stable variables and upgrade methods | Documentation | [Click Here](https://internetcomputer.org/docs/current/motoko/main/upgrades)                              | Learn more about stable variables and upgrades.                           |
 

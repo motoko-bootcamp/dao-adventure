@@ -37,9 +37,9 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 | Name          | Type   | URL                                                                                                       | Description                                        |
 | ------------- | ------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| Handle errors | Lesson | [Chapter 9](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-9/CHAPTER-9.MD)    | Discover how to handle errors in Motoko            |
-| Identity      | Lesson | [Chapter 10](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-10/CHAPTER-10.MD) | Learn how identity works on the Internet Computer  |
-| Intercanister | Lesson | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform intercanister calls in Motoko |
+| Handle errors | Lesson | [Chapter 9](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-9/CHAPTER-9.MD)    | Discover how to handle errors in Motoko            |
+| Identity      | Lesson | [Chapter 10](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-10/CHAPTER-10.MD) | Learn how identity works on the Internet Computer  |
+| Intercanister | Lesson | [Chapter 11](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-11/CHAPTER-11.MD) | Learn how to perform intercanister calls in Motoko |
 
 ## Concepts 🧠
 
