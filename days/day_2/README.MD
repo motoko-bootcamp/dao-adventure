@@ -33,12 +33,12 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 | Name                       | Type          | URL                                                                                                     | Description                                                                    |
 | -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Datastructures             | Lesson        | [Chapter 6](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-6/CHAPTER-6.MD)  | Learn about common datastructures in Motoko and how to use them - a must read! |
-| Non-Primitives Types       | Lesson        | [Chapter 7](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-7/CHAPTER-7.MD)  | Learn about non-primitive types in Motoko such as Tuples, Objects and Variants |
-| Advanced Types             | Lesson        | [Chapter 8](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-8/CHAPTER-8.MD)  | Discover more advanced types such as Optional, Generic or Shared types         |
+| Datastructures             | Lesson        | [Chapter 6](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-6/CHAPTER-6.MD)  | Learn about common datastructures in Motoko and how to use them - a must read! |
+| Non-Primitives Types       | Lesson        | [Chapter 7](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-7/CHAPTER-7.MD)  | Learn about non-primitive types in Motoko such as Tuples, Objects and Variants |
+| Advanced Types             | Lesson        | [Chapter 8](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-8/CHAPTER-8.MD)  | Discover more advanced types such as Optional, Generic or Shared types         |
 | Result                     | Documentation | [Base Library - Result](https://internetcomputer.org/docs/current/motoko/main/base/Result)              | The official documentation for the `Result` library in Motoko                  |
 | HashMap                    | Documentation | [Base Library - HashMap](https://internetcomputer.org/docs/current/motoko/main/base/HashMap)            | The official documentation for the `HashMap` library in Motoko                 |
-| The Network Nervous System | Appendix      | [Appendix](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/appendix-2/APPENDIX-2.MD) | Learn everything about the power of the NNS                                    |
+| The Network Nervous System | Appendix      | [Appendix](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/appendix-2/APPENDIX-2.MD) | Learn everything about the power of the NNS                                    |
 
 ## Concepts 🧠
 
@@ -54,7 +54,7 @@ Today, we'll delve deeper into the Motoko language, learn about datastructures a
 
 ## Motoko pill 💊
 
-> On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://opensea.io/collection/motoko-ghosts).
+> On the Motoko programming language's 2nd birthday in 2021, the DFINITY Foundation distributed 10,000 Motoko ghosts designed by Jon Ball of Pokedstudios to the community as NFT collectibles. The collection is still available on [Entrepot](https://entrepot.app/marketplace/motoko).
 
 <p align="center"><img src="../../assets/day_2/guide/motoko_ghosts.jpeg" style="width: 500px;" /></p>
 

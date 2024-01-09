@@ -39,7 +39,7 @@ This set of resources will help you complete this level and contains useful info
 
 | Name                 | Type          | URL                                                                                                       | Description                                                                                           |
 | -------------------- | ------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| HTTP Requests        | Chapter       | [Chapter 13](https://github.com/motoko-bootcamp/dao-adventure/blob/main/lessons/chapter-13/CHAPTER-13.MD) | Learn how to make HTTP requests to a canister                                                         |
+| HTTP Requests        | Chapter       | [Chapter 13](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-13/CHAPTER-13.MD) | Learn how to make HTTP requests to a canister                                                         |
 | Bitcoin Integration  | Documentation | [Click Here](https://internetcomputer.org/bitcoin-integration)                                            | Discover how the Internet Computer is connected with the Bitcoin network and how you can leverage it  |
 | Ethereum Integration | Documentation | [Click Here](https://internetcomputer.org/ethereum-integration)                                           | Discover how the Internet Computer is connected with the Ethereum network and how you can leverage it |
 
