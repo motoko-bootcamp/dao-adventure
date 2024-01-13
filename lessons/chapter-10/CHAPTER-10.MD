@@ -31,7 +31,7 @@ ldnRBAE39QwyGwkQoxWhmo+Sl9F4zA==
 ### Switching between identities
 To check the current used identity, execute:
 ```bash
-$ dfx identity whoamis 
+$ dfx identity whoami
 ```
 To view other available identities, run:
 ```bash
