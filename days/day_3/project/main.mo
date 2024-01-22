@@ -1,7 +1,7 @@
 import Result "mo:base/Result";
 import Principal "mo:base/Principal";
 import Types "types";
-actor class DAO() {
+actor {
 
     type Result<Ok, Err> = Types.Result<Ok, Err>;
 

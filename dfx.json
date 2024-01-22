@@ -1,7 +1,7 @@
 {
   "canisters": {
     "project_1": {
-      "main": "days/day_1/solution/main.mo",
+      "main": "days/day_1/project/main.mo",
       "type": "motoko"
     },
     "project_2": {

@@ -1,4 +1,4 @@
-actor class DAO() {
+actor {
 
     public shared query func getName() : async Text {
         return "Not implemented";

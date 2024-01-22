@@ -1,7 +1,7 @@
 import Result "mo:base/Result";
 import HashMap "mo:base/HashMap";
 import Types "types";
-actor class DAO() = this {
+actor {
 
     type Member = Types.Member;
     type Result<Ok, Err> = Types.Result<Ok, Err>;
