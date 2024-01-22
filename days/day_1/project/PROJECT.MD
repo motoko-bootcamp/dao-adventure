@@ -2,37 +2,31 @@
 
 <img src="../../../assets/day_1/project/cover.png"  style="width: 100%;" />
 
-## 💭 Story 
+## 💭 Story
 
 "**Welcome to the Motoko Academy - we are thrilled to have you here!**" As you stand at the entrance, a large luminous hologram greets you.
 
 Behind the glow of the hologram, the large hall opens up, filled with energy and innovation. You first notice the screens filled with lines of code - it's not just display, you can see live feeds of ongoing projects, showcasing the real-time development of groundbreaking applications and systems.
-
-There are also monitors around, displaying images of innovative projects and groundbreaking technology.
-
-On one screen, you notice a short-movie about a DAO focused on preserving biodiversity. Members from around the world collaborate to fund and manage conservation projects, using blockchain to ensure transparency and equitable participation.
-
-On another screen, you can see a city, but it looks different than what you might expect. The buildings have plants growing all over them, bringing a splash of green to the usual gray of the city. You can see people walking around, but they are not in cars. Instead, they are using different types of electric vehicles, from bikes to scooters to skateboards. You learn that the city is self-sufficient, producing its own food and energy. Also, the city is run by a DAO, where all the citizens are members.
-
-In one corner of the room, there’s a huge fish tank. But this fish tank is a bit different. You noyice little robots swimming around with the fish. The robots are there to check if the water is clean and to help take care of the plants. It's like gardeners but for the underwater world.
-
-This hall isn't just a typical classroom. It’s clear that this is a place of growth, discovery, and connection to something greater than oneself.
+technology. This hall isn't just a typical classroom. It’s clear that this is a place of growth, discovery, and connection to something greater than oneself.
 
 While you're lost in your thought, the artifical voice from the hologram gently asks: "**What is your dream?**"
-
-This is about turning your dreams into reality. **That's why today is time to grow and develop your vision**.
+Today is time to grow and develop your vision.
 
 ## 🎯 Mission
 
-Your task, should you decide to embark on this journey, is to lay down the foundation and set the direction for your DAO. Here at Motoko Academy, we believe that a strong foundation is key to creating a successful DAO, and it all starts with a clear and well-defined dream. <br/>
+Your task, should you decide to embark on this journey, is to lay down the foundation and set the direction for the DAO you are about to build. We believe that a strong foundation is key to creating a successful DAO, and it all starts with a clear and well-defined dream. <br/>
 So, take this moment to reflect:
 
-- How do you want to live your life?
-- What’s your idea (doesn't matter if it's small or big)?
-- What do you want to achieve?
-- What's your vision for the future?
+1. What changes do you aspire to see in the world?
+2. What is your personal vision for the future?
+3. If you had access to unlimited resources, what would you be passionate about doing?
+4. If you had the backing of a community, what kind of project or initiative would you like to undertake?
 
-Your DAO will be the vessel to help you achieve your dreams.
+## 👨‍🏫 Requirements
+
+- Your project has a name and a clear mission statement (i.e the manifesto).
+- Your DAO has a set of goals that will help you achieve your mission.
+- Anyone is able to query the name, manifesto and goals of your DAO.
 
 ## ✏️ Tasks
 

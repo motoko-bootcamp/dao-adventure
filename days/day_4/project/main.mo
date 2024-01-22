@@ -1,25 +1,30 @@
-import Account "account";
 import Result "mo:base/Result";
-import TrieMap "mo:base/TrieMap";
 import Buffer "mo:base/Buffer";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
 import Principal "mo:base/Principal";
-actor class DAO() {
-
-    // To implement the voting logic in this level you need to make use of the code implemented in previous levels.
-    // That's why we bring back the code of the previous levels here.
-
-    // For the logic of this level we need to bring back all the previous levels
-
+import Option "mo:base/Option";
+import Types "types";
+actor {
+    // For this level we need to make use of the code implemented in the previous projects.
+    // The voting system will make use of previous data structures and functions.
+    /////////////////
+    //   TYPES    //
     ///////////////
-    // LEVEL #1 //
-    /////////////
+    type Member = Types.Member;
+    type Result<Ok, Err> = Types.Result<Ok, Err>;
+    type HashMap<K, V> = Types.HashMap<K, V>;
+    type Proposal = Types.Proposal;
+    type ProposalContent = Types.ProposalContent;
+    type ProposalId = Types.ProposalId;
+    type Vote = Types.Vote;
 
-    let name : Text = "Motoko Bootcamp DAO";
-    var manifesto : Text = "Empower the next wave of builders to make the Web3 revolution a reality";
-
-    let goals : Buffer.Buffer<Text> = Buffer.Buffer<Text>(0);
+    /////////////////
+    // PROJECT #1 //
+    ///////////////
+    let goals = Buffer.Buffer<Text>(0);
+    let name = "Motoko Bootcamp";
+    var manifesto = "Empower the next generation of builders and make the DAO-revolution a reality";
 
     public shared query func getName() : async Text {
         return name;
@@ -40,135 +45,110 @@ actor class DAO() {
     };
 
     public shared query func getGoals() : async [Text] {
-        return Buffer.toArray(goals);
+        Buffer.toArray(goals);
     };
 
+    /////////////////
+    // PROJECT #2 //
     ///////////////
-    // LEVEL #2 //
-    /////////////
-
-    public type Member = {
-        name : Text;
-        age : Nat;
-    };
-    public type Result<A, B> = Result.Result<A, B>;
-    public type HashMap<A, B> = HashMap.HashMap<A, B>;
-
-    let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
+    let members = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
 
     public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
-        switch (dao.get(caller)) {
-            case (?member) {
-                return #err("Already a member");
-            };
+        switch (members.get(caller)) {
             case (null) {
-                dao.put(caller, member);
-                return #ok(());
+                members.put(caller, member);
+                return #ok();
+            };
+            case (?member) {
+                return #err("Member already exists");
             };
         };
     };
 
     public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
-        switch (dao.get(caller)) {
-            case (?member) {
-                dao.put(caller, member);
-                return #ok(());
-            };
+        switch (members.get(caller)) {
             case (null) {
-                return #err("Not a member");
+                return #err("Member does not exist");
+            };
+            case (?member) {
+                members.put(caller, member);
+                return #ok();
             };
         };
     };
 
     public shared ({ caller }) func removeMember() : async Result<(), Text> {
-        switch (dao.get(caller)) {
-            case (?member) {
-                dao.delete(caller);
-                return #ok(());
-            };
+        switch (members.get(caller)) {
             case (null) {
-                return #err("Not a member");
+                return #err("Member does not exist");
+            };
+            case (?member) {
+                members.delete(caller);
+                return #ok();
             };
         };
     };
 
     public query func getMember(p : Principal) : async Result<Member, Text> {
-        switch (dao.get(p)) {
+        switch (members.get(p)) {
+            case (null) {
+                return #err("Member does not exist");
+            };
             case (?member) {
                 return #ok(member);
-            };
-            case (null) {
-                return #err("Not a member");
             };
         };
     };
 
     public query func getAllMembers() : async [Member] {
-        return Iter.toArray(dao.vals());
+        return Iter.toArray(members.vals());
     };
 
     public query func numberOfMembers() : async Nat {
-        return dao.size();
+        return members.size();
     };
 
+    /////////////////
+    // PROJECT #3 //
     ///////////////
-    // LEVEL #3 //
-    /////////////
-
-    public type Subaccount = Blob;
-    public type Account = {
-        owner : Principal;
-        subaccount : ?Subaccount;
-    };
-
-    let nameToken = "Motoko Bootcamp Token";
-    let symbolToken = "MBT";
-
-    let ledger : TrieMap.TrieMap<Account, Nat> = TrieMap.TrieMap(Account.accountsEqual, Account.accountsHash);
+    let ledger = HashMap.HashMap<Principal, Nat>(0, Principal.equal, Principal.hash);
 
     public query func tokenName() : async Text {
-        return nameToken;
+        return "Motoko Bootcamp Token";
     };
 
     public query func tokenSymbol() : async Text {
-        return symbolToken;
+        return "MBT";
     };
 
-    public func mint(owner : Principal, amount : Nat) : async () {
-        let defaultAccount = { owner = owner; subaccount = null };
-        switch (ledger.get(defaultAccount)) {
-            case (null) {
-                ledger.put(defaultAccount, amount);
-            };
-            case (?some) {
-                ledger.put(defaultAccount, some + amount);
-            };
-        };
-        return;
-    };
-
-    public shared ({ caller }) func transfer(from : Account, to : Account, amount : Nat) : async Result<(), Text> {
-        let fromBalance = switch (ledger.get(from)) {
-            case (null) { 0 };
-            case (?some) { some };
-        };
-        if (fromBalance < amount) {
-            return #err("Not enough balance");
-        };
-        let toBalance = switch (ledger.get(to)) {
-            case (null) { 0 };
-            case (?some) { some };
-        };
-        ledger.put(from, fromBalance - amount);
-        ledger.put(to, toBalance + amount);
+    public func mint(owner : Principal, amount : Nat) : async Result<(), Text> {
+        let balance = Option.get(ledger.get(owner), 0);
+        ledger.put(owner, balance + amount);
         return #ok();
     };
 
-    public query func balanceOf(account : Account) : async Nat {
-        return switch (ledger.get(account)) {
-            case (null) { 0 };
-            case (?some) { some };
+    public func burn(owner : Principal, amount : Nat) : async Result<(), Text> {
+        let balance = Option.get(ledger.get(owner), 0);
+        if (balance < amount) {
+            return #err("Insufficient balance to burn");
         };
+        ledger.put(owner, balance - amount);
+        return #ok();
+    };
+
+    public shared ({ caller }) func transfer(from : Principal, to : Principal, amount : Nat) : async Result<(), Text> {
+        let balanceFrom = Option.get(ledger.get(from), 0);
+        let balanceTo = Option.get(ledger.get(to), 0);
+        if (balanceFrom < amount) {
+            return #err("Insufficient balance to transfer");
+        };
+        ledger.put(from, balanceFrom - amount);
+        ledger.put(to, balanceTo + amount);
+        return #ok();
+    };
+
+    public query func balanceOf(owner : Principal) : async Nat {
+        return (Option.get(ledger.get(owner), 0));
     };
 
     public query func totalSupply() : async Nat {
@@ -178,65 +158,22 @@ actor class DAO() {
         };
         return total;
     };
-
+    /////////////////
+    // PROJECT #4 //
     ///////////////
-    // LEVEL #4 //
-    /////////////
-
-    public type Status = {
-        #Open;
-        #Accepted;
-        #Rejected;
+    public shared ({ caller }) func createProposal(content : ProposalContent) : async Result<ProposalId, Text> {
+        return #err("Not implemented");
     };
 
-    public type Proposal = {
-        id : Nat;
-        status : Status;
-        manifest : Text;
-        votes : Int;
-        voters : [Principal];
-    };
-
-    public type CreateProposalOk = Nat;
-
-    public type CreateProposalErr = {
-        #NotDAOMember;
-        #NotEnoughTokens;
-        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
-    };
-
-    public type CreateProposalResult = Result<CreateProposalOk, CreateProposalErr>;
-
-    public type VoteOk = {
-        #ProposalAccepted;
-        #ProposalRefused;
-        #ProposalOpen;
-    };
-
-    public type VoteErr = {
-        #ProposalNotFound;
-        #AlreadyVoted;
-        #ProposalEnded;
-        #NotImplemented; // This is just a placeholder - can be removed once you start Level 4
-    };
-
-    public type VoteResult = Result<VoteOk, VoteErr>;
-
-    public shared ({ caller }) func createProposal(manifest : Text) : async CreateProposalResult {
-        return #err(#NotImplemented);
-    };
-
-    public query func getProposal(id : Nat) : async ?Proposal {
+    public query func getProposal(proposalId : ProposalId) : async ?Proposal {
         return null;
     };
 
-    public shared ({ caller }) func vote(id : Nat, vote : Bool) : async VoteResult {
-        return #err(#NotImplemented);
+    public shared ({ caller }) func voteProposal(proposalId : ProposalId, yesOrNo : Bool) : async Result<(), Text> {
+        return #err("Not implemented");
     };
 
-    /// DO NOT REMOVE - Used for local testing
-    public shared query ({ caller }) func whoami() : async Principal {
-        return caller;
+    public query func getAllProposals() : async [Proposal] {
+        return [];
     };
-
 };

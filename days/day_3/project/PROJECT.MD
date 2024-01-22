@@ -8,44 +8,28 @@ Walking through the Academy, you hear noises coming behind a door. You decide to
 
 Inside, screens come alive with graphs and data, illustrating the flow of tokens within various DAOs and markets. It's like the **NYSE** but for DAOs.
 
-Soon you come to understand that tokens are the lifeblood of DAOs. These tokens are more than just digital coins. It's about recognizing and rewarding contributions, big and small, ensuring the sustainability of the dream everyone is building together and giving it a structure.
+Soon you come to understand that tokens are the lifeblood of DAOs. These tokens are more than just digital coins. It's about recognizing and rewarding contributions, big and small, ensuring the sustainability of the dream everyone is building together and giving it a structure. With every step you take, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are also about fueling those dreams, supporting a community and giving it a structure. And the token? It's the fuel.
 
-With every step you take, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are about fueling those dreams, supporting a community and giving it a structure.
-
-And the token? It's the fuel.
-
-The AI voice, now familiar, resonates: "**How will you empower your dream?**"
-
-You are here to find out. It's time to supercharge your DAO with a token.
+It's time to supercharge your DAO with a token.
 
 ## 🎯 Mission
 
-Your mission, is to implement the code for the token that will be used for your DAO. <br/>
+Today, your mission, is to implement the code for a token. <br/>
+On the Internet Computer, we can create a token by creating a canister that stores balances and manage transfer. Assuming the canister is not controlled we can consider the token to be safe, trustless and decentralized. In this project you will implement the code for a simple token. If you are interested in learning more about tokens, you can read the [ICRC_1](https://internetcomputer.org/docs/current/developer-docs/integrations/icrc-1/) standard.
 
-To help you get started, in [main.mo](../../src/main.mo) we've introduced the concept of accounts and subaccounts.
+## 👨‍🏫 Requirements
 
-1. **Principal and Subaccount**: A principal can possess multiple accounts. Each of these accounts is uniquely identified by a 32-byte string termed as a 'subaccount'. Thus, an individual account is represented by a combination of a principal and its corresponding subaccount.
-2. **Default Subaccount**: If every byte in a subaccount string is set to '0', it designates that account as the default account for the principal.
-3. **Motoko Type Definitions**:
+> In a real world scenario, the `mint` function would be restricted to a specific set of identities. For the sake of simplicity, we will not implement this restriction. The same applies to the `burn` method.
 
-- `Subaccount`: Represents the 32-byte identifying string for an account.
-
-```motoko
-type Subaccount = Blob;
-```
-
-- `Account`: Denotes an account, comprised of its owner of type `Principal` and an optional subaccount of type `?Subaccount`.
-
-```motoko
-type Account = {
-    owner : Principal;
-    subaccount : ?Subaccount;
-};
-```
+- The token has a name and a symbol.
+- The token has a total supply.
+- Anyone can mint tokens.
+- Anyone can burn tokens.
+- Anyone can transfer tokens to another person assuming they have enough tokens.
 
 ## ✏️ Tasks
 
-1. Define the `ledger` variable. This variable will be used to store the balance of each account. The key of the `ledger` variable is of type `Account` and the value is of type `Nat`.
+1. Define the `ledger` variable. This variable will be used to store the balance of each user. The key of the `ledger` variable is of type `Principal` and the value is of type `Nat`.
 
 > Import the utilities functions in `account.mo` to help you.
 
@@ -65,24 +49,28 @@ tokenSymbol : shared query () -> async Text;
 
 > For your token, choose a symbol that is exactly 3 characters in length.
 
-4. Implement the `mint` function. This function takes a `Principal` and a `Nat` as arguments. It adds the `Nat` to the balance of the default account of the given `Principal` and returns nothing. The default account is the account with a `subaccount` set to `null`.
+4. Implement the `mint` function. This function takes a `Principal` and a `Nat` as arguments. It adds the `Nat` to the balance of the given `Principal`. You will use the `Result` type for your return value.
 
 ```motoko
-mint : shared (Principal, Nat) -> async ();
+mint : shared (p : Principal, amount : Nat) -> async ();
 ```
 
-> In a real world scenario, the `mint` function would be restricted to a specific set of identities. For the sake of simplicity, we will not implement this restriction.
-
-5. Implement the `transfer` function. This function takes an `Account` object for the sender (`from`), an `Account` object for the recipient (`to`), and a `Nat` value for the amount to be transferred. It transfers the specified amount of tokens from the sender's account to the recipient's account. You will use the `Result` type for your return value. Returns an error message if the sender's account does not have enough tokens to complete the transfer.
+5. Implement the `burn` function. This function takes a `Principal` and a `Nat` as arguments. It subtracts the `Nat` from the balance of the given `Principal`. You will use the `Result` type for your return value.
 
 ```motoko
-transfer : shared (from : Account, to : Account, amount:  Nat) -> async Result<(), Text>;
+burn : shared (p : Principal, amount : Nat) -> async Result<(), Text>;
 ```
 
-6. Implement the `balanceOf` query function. This function takes an `Account` object as an argument and returns the balance of the given account as a `Nat`. It should return 0 if the account does not exist in the `ledger` variable.
+5. Implement the `transfer` function. This function takes a `Principal` representing the sender (`from`), a `Principal` representing the recipient (`to`), and a `Nat` value for the amount to be transferred. It transfers the specified amount of tokens from the sender's account to the recipient's account. You will use the `Result` type for your return value.
 
 ```motoko
-balanceOf : shared (account : Account) -> async Nat;
+transfer : shared (from : Principal, to : Principal, amount:  Nat) -> async Result<(), Text>;
+```
+
+6. Implement the `balanceOf` query function. This function takes a `Princopal` as an argument and returns the balance of the given account as a `Nat`. It should return 0 if the account does not exist in the `ledger` variable.
+
+```motoko
+balanceOf : shared (p : Principal) -> async Nat;
 ```
 
 7. Implement the `totalSupply` query function. This function takes no parameters and returns the total supply of your token as a `Nat`.
@@ -99,9 +87,10 @@ At the end of this level, your canister should implement the following interface
 actor {
     tokenName : shared query () -> async Text;
     tokenSymbol : shared query () -> async Text;
-    mint : shared (Principal, Nat) -> async ();
-    transfer : shared (from : Account, to : Account, amount:  Nat) -> async Result<(), Text>;
-    balanceOf : shared (account : Account) -> async Nat;
+    mint : shared (owner : Principal, amount : Nat) -> async Result<(), Text>;
+    burn : shared (owner : Principal, amount : Nat) -> async Result<(), Text>;
+    transfer : shared (from : Principal, to : Principal, amount:  Nat) -> async Result<(), Text>;
+    balanceOf : shared (p : Principal) -> async Nat;
     totalSupply : shared query () -> async Nat;
 }
 ```

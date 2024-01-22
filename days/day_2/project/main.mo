@@ -1,13 +1,11 @@
 import Result "mo:base/Result";
 import HashMap "mo:base/HashMap";
+import Types "types";
 actor class DAO() = this {
 
-    public type Member = {
-        name : Text;
-        age : Nat;
-    };
-    public type Result<A, B> = Result.Result<A, B>;
-    public type HashMap<A, B> = HashMap.HashMap<A, B>;
+    type Member = Types.Member;
+    type Result<Ok, Err> = Types.Result<Ok, Err>;
+    type HashMap<K, V> = Types.HashMap<K, V>;
 
     public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
         return #err("Not implemented");

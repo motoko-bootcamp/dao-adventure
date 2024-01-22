@@ -1,14 +1,9 @@
-import Account "account";
 import Result "mo:base/Result";
-actor class DAO()  {
+import Principal "mo:base/Principal";
+import Types "types";
+actor class DAO() {
 
-    // For this level make sure to use the helpers function in Account.mo
-    public type Subaccount = Blob;
-    public type Result<A,B> = Result.Result<A,B>;
-    public type Account = {
-        owner : Principal;
-        subaccount : ?Subaccount;
-    };
+    type Result<Ok, Err> = Types.Result<Ok, Err>;
 
     public query func tokenName() : async Text {
         return "Not implemented";
@@ -18,15 +13,19 @@ actor class DAO()  {
         return "Not implemented";
     };
 
-    public func mint(owner : Principal, amount : Nat) : async () {
-        return;
-    };
-
-    public shared ({ caller }) func transfer(from : Account, to : Account, amount : Nat) : async Result<(), Text> {
+    public func mint(owner : Principal, amount : Nat) : async Result<(), Text> {
         return #err("Not implemented");
     };
 
-    public query func balanceOf(account : Account) : async Nat {
+    public func burn(owner : Principal, amount : Nat) : async Result<(), Text> {
+        return #err("Not implemented");
+    };
+
+    public shared ({ caller }) func transfer(from : Principal, to : Principal, amount : Nat) : async Result<(), Text> {
+        return #err("Not implemented");
+    };
+
+    public query func balanceOf(account : Principal) : async Nat {
         return 0;
     };
 

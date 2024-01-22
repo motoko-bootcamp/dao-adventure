@@ -14,7 +14,6 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 > Those are the tasks you need to complete today.
 
 - You have joined a team and met your teammates.
-- You have your environment set up and ready to deploy applications on the Internet Computer.
 - You have completed the project for this level and submitted it on [motokobootcamp.com](https://motokobootcamp.com/).
 
 ## Lectures 🍿
@@ -32,13 +31,13 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 > This set of resources will help you complete this level.
 
-| Name                        | Type          | URL                                                                                                       | Description                                                            |
-| --------------------------- | ------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Name                        | Type          | URL                                                                                                                | Description                                                            |
+| --------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | Fundamental concepts        | Lesson        | [Chapter 1](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-1/CHAPTER-1.MD)    | Learn about the fundamental concepts of Motoko - a must read!          |
 | Common programming concepts | Lesson        | [Chapter 2](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-2/CHAPTER-2.MD)    | Learn about variables, functions and basic expressions in Motoko.      |
 | Primitive Types             | Lesson        | [Chapter 3](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-3/CHAPTER-3.MD)    | Learn about primitive types in Motoko.                                 |
 | Candid                      | Lesson        | [Chapter 4](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/chapter-4/CHAPTER-4.MD)    | Learn about Candid the IDL of the Internet Computer and why it matters |
-| Buffer                      | Documentation | [Base Library - Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer)                | The official documentation for the `Buffer` library in Motoko          |
+| Buffer                      | Documentation | [Base Library - Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer)                         | The official documentation for the `Buffer` library in Motoko          |
 | Unlocking the power of DAOs | Appendix      | [Appendix 1](https://github.com/motoko-bootcamp/dao-adventure-training/blob/main/lessons/appendix-1/APPENDIX-1.MD) | Learn about the power of DAOs                                          |
 
 ## Concepts 🧠

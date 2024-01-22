@@ -1,17 +1,15 @@
 import Result "mo:base/Result";
-import HashMap "mo:base/HashMap";
-import TrieMap "mo:base/TrieMap";
-import Principal "mo:base/Principal";
-import Text "mo:base/Text";
 import Buffer "mo:base/Buffer";
-import Nat64 "mo:base/Nat64";
+import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
-import Blob "mo:base/Blob";
-import Debug "mo:base/Debug";
+import Principal "mo:base/Principal";
 import Option "mo:base/Option";
+import Types "types";
+import Nat64 "mo:base/Nat64";
+import Nat32 "mo:base/Nat32";
+import Hash "mo:base/Hash";
 import Time "mo:base/Time";
 import Array "mo:base/Array";
-import Types "types";
 actor {
     // For this level we need to make use of the code implemented in the previous projects.
     // The voting system will make use of previous data structures and functions.
@@ -26,9 +24,6 @@ actor {
     type ProposalContent = Types.ProposalContent;
     type ProposalId = Types.ProposalId;
     type Vote = Types.Vote;
-    type DAOStats = Types.DAOStats;
-    type HttpRequest = Types.HttpRequest;
-    type HttpResponse = Types.HttpResponse;
 
     /////////////////
     // PROJECT #1 //
@@ -62,6 +57,7 @@ actor {
     /////////////////
     // PROJECT #2 //
     ///////////////
+
     let members = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
 
     public shared ({ caller }) func addMember(member : Member) : async Result<(), Text> {
@@ -178,6 +174,7 @@ actor {
     /////////////////
     // PROJECT #4 //
     ///////////////
+
     var nextProposalId : Nat64 = 0;
     let proposals = HashMap.HashMap<ProposalId, Proposal>(0, Nat64.equal, Nat64.toNat32);
 
@@ -299,56 +296,4 @@ actor {
     public query func getAllProposals() : async [Proposal] {
         return Iter.toArray(proposals.vals());
     };
-
-    /////////////////
-    // PROJECT #5 //
-    ///////////////
-    let logo : Text = "";
-
-    func _getWebpage() : Text {
-        var webpage = "<style>" #
-        "body { text-align: center; font-family: Arial, sans-serif; background-color: #f0f8ff; color: #333; }" #
-        "h1 { font-size: 3em; margin-bottom: 10px; }" #
-        "hr { margin-top: 20px; margin-bottom: 20px; }" #
-        "em { font-style: italic; display: block; margin-bottom: 20px; }" #
-        "ul { list-style-type: none; padding: 0; }" #
-        "li { margin: 10px 0; }" #
-        "li:before { content: '👉 '; }" #
-        "svg { max-width: 150px; height: auto; display: block; margin: 20px auto; }" #
-        "h2 { text-decoration: underline; }" #
-        "</style>";
-
-        webpage := webpage # "<div><h1>" # name # "</h1></div>";
-        webpage := webpage # "<em>" # manifesto # "</em>";
-        webpage := webpage # "<div>" # logo # "</div>";
-        webpage := webpage # "<hr>";
-        webpage := webpage # "<h2>Our goals:</h2>";
-        webpage := webpage # "<ul>";
-        for (goal in goals.vals()) {
-            webpage := webpage # "<li>" # goal # "</li>";
-        };
-        webpage := webpage # "</ul>";
-        return webpage;
-    };
-
-    public query func getStats() : async DAOStats {
-        return ({
-            name = "";
-            manifesto = "";
-            goals = [];
-            members = [];
-            logo = "";
-            numberOfMembers = 0;
-        });
-    };
-
-    public func http_request(request : HttpRequest) : async HttpResponse {
-        return ({
-            status_code = 404;
-            headers = [];
-            body = Blob.fromArray([]);
-            streaming_strategy = null;
-        });
-    };
-
 };

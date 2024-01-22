@@ -2,7 +2,7 @@
 
 <img src="../../../assets/day_5/project/cover.png"  style="width: 100%;"/>
 
-## Introduction
+## I💭 Story
 
 It's showtime! 🎤
 You have built the foundational structure for the DAO.
@@ -12,58 +12,37 @@ A simple way to do this is to build a website that will allow anyone to see the 
 
 ## 🎯 Mission
 
-Canisters are able to serve web content and websites! We will leverage this feature in this level. Your mission, is to implement a simple website that will allow anyone to see the name, manifesto, goals and some statistics about your DAO. We will do that without using any frontend technology. We will simply use Motoko and some HTML to generate the webpage.
+Canisters are able to serve web content and websites. We will leverage this feature in this level. <br/>
+
+Your mission, is to implement a simple website that will allow anyone to see the name, manifesto, goals of your DAO. We will do that without using any frontend technology. We will simply use Motoko and HTML to generate the webpage.
 
 The end result should look something like this:
 
 <p align="center"> <img src="../../../assets/day_5/project/webpage_mbc.png"  style="border: 1px solid black;"/> </p>
 
+## 👨‍🏫 Requirements
+
+The website should respect the following requirements:
+
+- The name of the DAO should be displayed.
+- The logo of the DAO should be displayed (see below).
+- The manifesto of the DAO should be displayed.
+- The goals of the DAO should be displayed.
+
 ## ✏️ Tasks
 
-1. Select a logo for the DAO. You will need to find a logo that is available as an SVG file. You can use a website like [FlatIcon](https://www.flaticon.com/fr/).
+1. Select a logo for your DAO. You will need to find a logo that is available as an SVG file. You can use a website like [FlatIcon](https://www.flaticon.com/fr/).
 
 > SVG stands for Scalable Vector Graphics. We will use SVGs because they are basically text files that carry vector information about visuals. This means we don't have to worry about uploading any asset to our canister, we can simply copy the SVG file and paste it directly in our code.
 
-2. Define an immutable variable called `logo` of type `Text` and set it to the value of the SVG file.
+2. Set the value of the immutable variable called `logo` of type `Text` to the value of the logo.
 
 > You can copy the content of the SVG file and paste it directly into your code. Ensure that you use single quotes (`) for any quotes within the SVG file and double quotes (") for enclosing the entire text, as Motoko employs double quotes to delineate strings.
 
-To help you move forward, we've defined the following type:
+3. Implement the `getStats` function. This function will be used to display some statistics about your DAO.
 
-- `DAOStats` : which represents the information about the DAO. It has the following fields:
-  - `name`: A `Text` representing the name of the DAO.
-  - `manifesto`: A `Text` representing the manifesto of the DAO.
-  - `goals`: An `Array` of `Text` representing the goals of the DAO.
-  - `member`: An `Array` of `Text` representing the members of the DAO.
-  - `logo`: A `Text` representing the logo of the DAO.
-  - `numberOfMembers`: A `Nat` representing the number of members of the DAO.
-
-```motoko
-public type DAOStats = {
-    name : Text;
-    manifesto : Text;
-    goals : [Text];
-    member : [Text];
-    logo : Text;
-    numberOfMembers : Nat;
-};
-```
-
-3. Implement the function `getStats`. This function takes no parameters and returns a `DAOInfo` object that contains updated information about the DAO.
-
-```motoko
-getStats : shared query () -> async DAOStats;
-```
-
-To help you move forward, we've defined an helper function `getWebpage()`. The `_getWebpage` function return a `Text` object that contains the formatted webpage.
-
-> For the first time in this adventure, we're encountering a private function. A private function is a function that is only accessible from within the canister. It cannot be called from outside the canister. It's a convention to prefix the name of a private function with an underscore (`_`).
-
-> You will need to uncomment the `getWebpage()` function in the `main.mo` file to use it.
-
-By leveraging the `http.mo` file that is provided in the `src` folder, we've defined the `HttpRequest` and `HttpResponse` types. In Motoko, to serve a webpage, you simply need to implement a `http_request` query function. This function will be called by the Internet Computer when a user tries to access your webpage.
-
-For instance this is how you would implement a `http_request` query function that serves a simple "Hello World" webpage:
+In Motoko, to serve a webpage, you simply need to implement a http_request query function. This function will be called by the Internet Computer when a user tries to access your webpage.
+For instance this is how you would implement a simple http_request function that returns a simple `Hello World` webpage:
 
 ```motoko
 public query func http_request(request : HttpRequest) : async HttpResponse {
@@ -74,10 +53,10 @@ public query func http_request(request : HttpRequest) : async HttpResponse {
         streaming_strategy = null
     };
     return(response)
-};
+}
 ```
 
-4. Implement the `http_request` query function. This function takes a `request` of type `HttpRequest` as a parameter and returns a `HttpResponse` object. This function will be used to serve the webpage of your DAO.
+4. Implement the `http_request` query function. This function will be used to serve the webpage of your DAO. You can use the `_getWebpage` function to generate the HTML of the webpage.
 
 ## 📺 Interface
 
