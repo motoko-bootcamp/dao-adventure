@@ -1,7 +1,0 @@
-service : {
-  addGoal: (text) -> ();
-  getGoals: () -> (vec text) query;
-  getManifesto: () -> (text) query;
-  getName: () -> (text) query;
-  setManifesto: (text) -> ();
-}
