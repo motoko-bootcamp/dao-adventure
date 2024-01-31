@@ -4,11 +4,13 @@
 
 ## 💭 Story
 
-Walking through the Academy, you hear a mix of different sounds, like a music. Following the sound, you come to a big area.
+Walking through the Academy, you hear a mix of different sounds, like a music. Following the sound, you enter in a new room - filled with students.
 
-Inside, students are grouped together, each singing a different note or using a different instrument, yet harmoniously contributing to an enchanting melody. The guiding AI floats by, whispering, "_Just as in music, a DAO should translate individual voices into harmonious decisions._"
+Inside, students are grouped together, each singing a different note or using a different instrument, yet harmoniously contributing to an enchanting melody.
 
-You're about to learn that in a DAO, making choices isn't about the loudest voice, but about ensuring every voice contributes to the collective song. It's time to orchestrate your DAO's voting system, letting every member strike their note.
+The guiding AI floats by, whispering, "_Just as in music, a DAO should translate individual voices into harmonious decisions._"
+
+It's time to orchestrate your DAO's voting system, letting every member strike their note.
 
 ## 🎯 Mission
 
@@ -39,7 +41,6 @@ To help you get started we've defined different types in [types.mo](./types.mo)
 3. Implement the `getProposal` function.
 4. Implement the `voteProposal` function.
 5. Implement the `getAllProposals` function.
-6. Deploy your canister to the Playground and submit it on the [Dashboard](https://www.motokobootcamp.com/).
 
 ## 📺 Interface
 

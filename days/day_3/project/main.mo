@@ -1,9 +1,11 @@
 import Result "mo:base/Result";
 import Principal "mo:base/Principal";
+import HashMap "mo:base/HashMap";
 import Types "types";
 actor {
 
     type Result<Ok, Err> = Types.Result<Ok, Err>;
+    type HashMap<K, V> = Types.HashMap<K, V>;
 
     public query func tokenName() : async Text {
         return "Not implemented";

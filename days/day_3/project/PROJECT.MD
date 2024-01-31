@@ -4,13 +4,11 @@
 
 ## 💭 Story
 
-Walking through the Academy, you hear noises coming behind a door. You decide to see for yourself and soon find a giant room.
+Walking through the Academy, you hear noises coming from behind a door. You decide to see for yourself and soon enter inside a giant room. Inside the room, screens come alive with graphs and data, illustrating the flow of tokens. It's like the **NYSE** but for DAOs.
 
-Inside, screens come alive with graphs and data, illustrating the flow of tokens within various DAOs and markets. It's like the **NYSE** but for DAOs.
+That's when it hit you. Tokens are the lifeblood of DAOs. The tokens are more than just digital coins. It's about recognizing and rewarding contributions, big or small, and ensuring the sustainability of the dream everyone is building together. With every new day at the academy, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are also about giving those dreams a structure and supporting a community.
 
-Soon you come to understand that tokens are the lifeblood of DAOs. These tokens are more than just digital coins. It's about recognizing and rewarding contributions, big and small, ensuring the sustainability of the dream everyone is building together and giving it a structure. With every step you take, you understand a bit more the essence of DAOs. DAOs are not just about dreams or community, they are also about fueling those dreams, supporting a community and giving it a structure. And the token? It's the fuel.
-
-It's time to supercharge your DAO with a token.
+Today, it's time to supercharge your DAO with a token.
 
 ## 🎯 Mission
 
@@ -29,9 +27,7 @@ On the Internet Computer, we can create a token by creating a canister that stor
 
 ## ✏️ Tasks
 
-1. Define the `ledger` variable. This variable will be used to store the balance of each user. The key of the `ledger` variable is of type `Principal` and the value is of type `Nat`.
-
-> Import the utilities functions in `account.mo` to help you.
+1. Define the `ledger` variable. This variable will be used to store the balance of each user. The key of the `ledger` variable is of type `Principal` and the value is of type `Nat`. You can use the `HashMap` or `TrieMap` types to implement this variable.
 
 2. Implement the `tokenName` function, this function takes no parameters and returns the name of your token as a `Text`.
 

@@ -11,15 +11,11 @@ actor {
         return #err("Not implemented");
     };
 
-    public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
-        return #err("Not implemented");
-    };
-
-    public shared ({ caller }) func removeMember() : async Result<(), Text> {
-        return #err("Not implemented");
-    };
-
     public query func getMember(p : Principal) : async Result<Member, Text> {
+        return #err("Not implemented");
+    };
+
+    public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
         return #err("Not implemented");
     };
 
@@ -29,6 +25,10 @@ actor {
 
     public query func numberOfMembers() : async Nat {
         return 0;
+    };
+
+    public shared ({ caller }) func removeMember() : async Result<(), Text> {
+        return #err("Not implemented");
     };
 
 };

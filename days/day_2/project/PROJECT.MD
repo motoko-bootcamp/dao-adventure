@@ -15,8 +15,8 @@ Your mission, is to make it possible for your fellow students to join as members
 ## 👨‍🏫 Requirements
 
 - Anyone is able to join the DAO and create a `Member` profile.
-- Users are authenticated and can only modify their own profile.
 - Members can leave the DAO by deleting their `Member` profile.
+- Users are authenticated and can only modify their own profile.
 
 ## ✏️ Tasks
 
@@ -43,7 +43,7 @@ type Result<A,B> = Result.Result<A,B>;
 type HashMap<K,V> = HashMap.HashMap<K,V>;
 ```
 
-1. Define an immutable variable `members` of type `Hashmap<Principal,Member>` that will be used to store the members of your DAO. Each principal is associated with a member.
+1. Define an immutable variable `members` of type `Hashmap<Principal,Member>` that will be used to store the members of your DAO.
 
 > You might be wondering why we're using an immutable variable in this context, especially when we plan to add members to the data structure. The reason for this choice is that we are using a HashMap, and our intention is not to change the reference to the HashMap itself, but rather to modify the content within the HashMap.
 

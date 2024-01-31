@@ -22,13 +22,13 @@ actor DAO {
         };
     };
 
-    public shared ({ caller }) func updateMember(member : Member) : async Result<(), Text> {
+    public shared ({ caller }) func updateMember(newMember : Member) : async Result<(), Text> {
         switch (members.get(caller)) {
             case (null) {
                 return #err("Member does not exist");
             };
             case (?member) {
-                members.put(caller, member);
+                members.put(caller, newMember);
                 return #ok();
             };
         };
