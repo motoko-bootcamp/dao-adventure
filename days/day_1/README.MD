@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Welcome to the elite [Motoko Bootcamp](https://twitter.com/motoko_bootcamp), where talented minds like yours gather to learn and master the art of programming on the **Internet Computer**.
+Welcome to the [Mzansi Web3 Bootcamp](https://twitter.com/icphub_SA), where great minds like yours gather to learn and master the art of programming on the **Internet Computer**.
 
 Today marks your exciting first day, and while it may be intense, take the chance to bond with your teammates and brace yourself for the adventure ahead. <br/>
 
-Don't worry if you fall behind; allow yourself the time needed to grasp the material. Keep in mind that 7 days is a brief period to learn everything there is to know about **Web 3.0** and the **Internet Computer**. All resources will be available after the week is over, so you can catch-up on anything you've missed.
-Above all, the most vital aspect of the Bootcamp is to have fun and build connections - let's learn and all grow together.
+Don't worry if you fall behind; allow yourself the time needed to grasp the material. Keep in mind that 10 days is a brief period to learn everything there is to know about **Web 3.0** and the **Internet Computer**. All resources will be available during and after the bootcamp period, so you can catch-up on anything you've missed.
+Above all, the most vital aspect of the Bootcamp is to have fun and learn how to build - let's learn and all grow together.
 
 ## Your tasks ✅
 
