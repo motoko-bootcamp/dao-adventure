@@ -4,7 +4,7 @@
 
 Welcome to the [Mzansi Web3 Bootcamp](https://twitter.com/icphub_SA), where great minds like yours gather to learn and master the art of programming on the **Internet Computer**.
 
-Today marks your exciting first day, and while it may be intense, take the chance to bond with your teammates and brace yourself for the adventure ahead. <br/>
+Today marks your exciting first day, and while it may be intense, take the chance to bond with your mates and brace yourself for the adventure ahead. <br/>
 
 Don't worry if you fall behind; allow yourself the time needed to grasp the material. Keep in mind that 10 days is a brief period to learn everything there is to know about **Web 3.0** and the **Internet Computer**. All resources will be available during and after the bootcamp period, so you can catch-up on anything you've missed.
 Above all, the most vital aspect of the Bootcamp is to have fun and learn how to build - let's learn and all grow together.
@@ -61,6 +61,6 @@ Above all, the most vital aspect of the Bootcamp is to have fun and learn how to
 
 ## Meme of the day 🙈
 
-> This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/vwEC5RcKBv) channel - we'll feature the best ones here.
+> This meme is brought to you by a fellow Motoko Bootcamp student. If you have a meme you'd like to share, please send it to us on the [memes](https://discord.gg/fTATv6G9) channel - we'll feature the best ones here.
 
 <p align="center"><img src="../../assets/day_1/guide/meme_day_1.jpg" style="width: 500px;" /></p>
