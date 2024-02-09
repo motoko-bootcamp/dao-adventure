@@ -351,7 +351,7 @@ actor {
         });
     };
 
-    public func http_request(request : HttpRequest) : async HttpResponse {
+    public query func http_request(request : HttpRequest) : async HttpResponse {
         return ({
             headers = [("Content-Type", "text/html; charset=UTF-8")];
             status_code = 200 : Nat16;
