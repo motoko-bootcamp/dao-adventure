@@ -45,7 +45,7 @@ This code will throw an error `expected mutable assignment target`.
 
 To create an object that can be modified, we must use the `var` keyword in the field definition. Let's modify the previous example so that only the student's age can be changed, while the other fields remain constant.
 ```motoko
-let student = {
+var student = {
     name = "John";
     var age = 35;
     favoriteLanguage = "Motoko";
