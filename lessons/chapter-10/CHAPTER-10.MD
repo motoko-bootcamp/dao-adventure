@@ -14,7 +14,7 @@ We can use `dfx` to create, delete and manage our identities, those identities a
 ### Creating an identity
 To generate a new identity you can run the following command
 ```bash
-$ dfx new identity <NAME>
+$ dfx identity new <NAME>
 ```
 > You can include the --disable-encryption flag when executing the command to prevent encryption of the file containing your private key. Otherwise, the file will be encrypted, and you will be prompted for a password every time a command requiring a signature is used.
 
