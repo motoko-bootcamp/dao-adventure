@@ -1,11 +1,11 @@
 # The DAO Adventure - Starter
 
+> This repository contains the starter code for the DAO Adventure project. You are required to complete the code across all 7 chapters.
+
 <div style="text-align: center;">
   <img src="./assets/cover.png"  alt="Motoko Bootcamp Cover">
 </div>
 
-
-> This repository contains the starter code for the DAO Adventure project. You are required to complete the code across all 7 chapters.
 
 ## Welcome 👋 
 Welcome to the DAO Adventure a course designed to teach you how to create a **DAO** (Decentralized Autonomous Organization) from scratch on the **Internet Computer** platform, with the **Motoko** programming language.
@@ -16,7 +16,7 @@ This future is only possible if enough builders learn how to harness the power o
 
 
 <div style="text-align: center;">
-  <img src="./assets/diploma_mbc.png" width="500" alt="Motoko Bootcamp Diploma">
+  <img src="./assets/diploma_mbc.png" width="500px" alt="Motoko Bootcamp Diploma">
 </div>
 
 To follow this course, register on the [Submission website](https://www.motokobootcamp.com/).
