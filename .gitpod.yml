@@ -1,17 +1,17 @@
 # Online IDE configuration (safe to delete)
 
 tasks:
-  - before: |
-      npm install &
+  - init: |
+      npm install
       export MO_DEV_HIDE_URLS=1 # hide Candid UI links
+      echo 'export MO_DEV_HIDE_URLS=1' >> ~/.bashrc
       export PATH="$HOME/bin:$PATH"
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
-      sudo apt-get install -q -y libunwind-dev
-      sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-      sh -ci "npm i -g ic-mops"
-      sh -ci "mops initi"
-      sh -ci "dfx start --clean --background"
-      sh -ci "dfx stop"
+      sudo apt-get update && sudo apt-get install -q -y libunwind-dev DFXVM_INIT_YES=true sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+      npm i -g ic-mops
+      mops install
+    command: |
+      echo "Installation complete. Please close this terminal and open a new one to complete the setup and start working on your project."
 
 vscode:
   extensions:

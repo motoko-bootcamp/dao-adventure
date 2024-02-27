@@ -1,28 +1,49 @@
 {
   "canisters": {
-    "project_1": {
-      "main": "days/day_1/project/main.mo",
+    "qualification_demo": {
+      "main": "chapters/qualification/demo/main.mo",
       "type": "motoko"
     },
-    "project_2": {
-      "main": "days/day_2/project/main.mo",
+    "qualification" : {
+      "main": "chapters/qualification/challenge/main.mo",
       "type": "motoko"
     },
-    "project_3": {
-      "main": "days/day_3/project/main.mo",
+    "chapter_1": {
+      "main": "chapters/chapter_1/challenge/main.mo",
       "type": "motoko"
     },
-    "project_4": {
-      "main": "days/day_4/project/main.mo",
+    "chapter_2": {
+      "main": "chapters/chapter_2/challenge/main.mo",
       "type": "motoko"
     },
-    "project_5": {
-      "main": "days/day_5/project/main.mo",
+    "chapter_3": {
+      "main": "chapters/chapter_3/challenge/main.mo",
+      "type": "motoko"
+    },
+    "chapter_4": {
+      "main": "chapters/chapter_4/challenge/main.mo",
+      "type": "motoko"
+    },
+    "chapter_5": {
+      "main": "chapters/chapter_5/challenge/main.mo",
+      "type": "motoko"
+    },
+    "graduation_dao" : {
+      "main": "chapters/graduation/dao/main.mo",
+      "type": "motoko"
+    },
+    "graduation_token": {
+      "main": "chapters/graduation/token/main.mo",
+      "type": "motoko"
+    },
+    "graduation_webpage": {
+      "main": "chapters/graduation/webpage/main.mo",
       "type": "motoko"
     }
   },
   "defaults": {
     "build": {
+      "args": "--hide-warnings",
       "packtool": "mops sources"
     }
   }
