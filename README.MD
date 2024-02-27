@@ -2,9 +2,7 @@
 
 > This repository contains the starter code for the DAO Adventure project. You are required to complete the code across all 7 chapters.
 
-<div style="text-align: center;">
-  <img src="./assets/cover.png"  alt="Motoko Bootcamp Cover">
-</div>
+<img src="./assets/cover.png"  alt="Motoko Bootcamp Cover">
 
 
 ## Welcome 👋 
@@ -15,9 +13,9 @@ DAOs are a major innovation, changing governance. Just like the **steam engine**
 This future is only possible if enough builders learn how to harness the power of **DAOs**. That's why your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a **DAO**.
 
 
-<div style="text-align: center;">
+<p align="center">
   <img src="./assets/diploma_mbc.png" width="500px" alt="Motoko Bootcamp Diploma">
-</div>
+</p>
 
 To follow this course, register on the [Submission website](https://www.motokobootcamp.com/).
 
@@ -37,7 +35,7 @@ If you want to skip the [local installation process](s), you can use our online 
 
 > [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#http://github.com/motoko-bootcamp/dao-adventures)
 
-## Deploying a canister
+## Deploying a canister 🚀
 To deploy a canister simply run the following command in your terminal: 
 
 ``` dfx deploy --playground <NAME_OF_CANISTER> ```
@@ -60,7 +58,6 @@ The course is organized into 7 distinct sections, comprising 5 main chapters, a 
 To help you with the course, we have created a playlist with all the videos you need to complete the course - it also contains additional resources and tutorials about Motoko, the Internet Computer, and DAOs. <br/>
 
 You can access the playlist [here](https://www.youtube.com/playlist?list=PLl8VueN-2q18cOvhb1pDPPAUbUHY9z-CU)
-
 
 ## Credits 
 Written by [seb_icp](https://twitter.com/seb_icp/) with the support from [Code & State](https://twitter.com/codeandstate). 
