@@ -1,7 +1,7 @@
 # The DAO Adventure - Starter
 
 <div style="text-align: center;">
-  <img src="./assets/cover.png" width="500" alt="Motoko Bootcamp Cover">
+  <img src="./assets/cover.png"  alt="Motoko Bootcamp Cover">
 </div>
 
 
@@ -16,7 +16,7 @@ This future is only possible if enough builders learn how to harness the power o
 
 
 <div style="text-align: center;">
-  <img src="./assets/diploma_mbc.jpg" width="500" alt="Motoko Bootcamp Diploma">
+  <img src="./assets/diploma_mbc.png" width="500" alt="Motoko Bootcamp Diploma">
 </div>
 
 To follow this course, register on the [Submission website](https://www.motokobootcamp.com/).
