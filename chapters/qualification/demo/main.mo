@@ -1,17 +1,19 @@
-actor Board {
-    
-    var message : Text = "Motoko Bootcamp will become the best Web3 bootcamp in the world!";
+actor Counter {
     var counter : Nat = 0;
+    let message : Text = "Motoko Bootcamp will become the best Web3 bootcamp in the world!";
 
-    public func showMessage(newMessage : Text) : async Text {
-        let oldMessage = message;
-        message := newMessage;
-        counter += 1;
-        return oldMessage;
+
+    public func setCounter(newCounter : Nat) : async () {
+        counter := newCounter; // We assign a new value to the counter variable based on the provided argument 
+        return;
     };
 
-    public query func getNumberMessage() : async Nat {
+    public func incrementCounter() : async () {
+        counter += 1; // We increment the counter by one
+        return; 
+    };
+    
+    public query func getCounter() : async Nat {
         return counter;
     };
-
 }
