@@ -1,7 +1,7 @@
 # Online IDE configuration (safe to delete)
 
 tasks:
-  - init: |
+  - before: |
       npm install
       export MO_DEV_HIDE_URLS=1 # hide Candid UI links
       echo 'export MO_DEV_HIDE_URLS=1' >> ~/.bashrc
