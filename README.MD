@@ -33,7 +33,7 @@ No prior experience with Web3, the Internet Computer, Motoko, or DAOs is require
 
 If you want to skip the [local installation process](s), you can use our online development environment to complete the course.
 
-> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#http://github.com/motoko-bootcamp/dao-adventures)
+> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#http://github.com/motoko-bootcamp/dao-adventure)
 
 ## Deploying a canister 🚀
 To deploy a canister simply run the following command in your terminal: 
