@@ -11,8 +11,6 @@ tasks:
       npm i -g ic-mops
       mops install
       DFXVM_INIT_YES=true sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-      dfx start --background
-      dfx stop
 
     command: |
       echo "Installation complete. Please close this terminal and open a new one to complete the setup and start working on your project."
