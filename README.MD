@@ -42,6 +42,7 @@ We recommend to use our online development environment to complete the course. G
 5. Reach out directly on our [feedback channel](https://discord.gg/vTcwUdUwTf).
 
 > Prefer to work locally? 
+
 Read our [local setup guide](https://nnri3-7qaaa-aaaaj-qa3qa-cai.icp0.io/dao_adventure/qualification/local_setup.html).
 
 ## Deploying a canister 🚀
