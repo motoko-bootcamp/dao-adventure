@@ -4,7 +4,6 @@
 
 <img src="./assets/cover.png"  alt="Motoko Bootcamp Cover">
 
-
 ## Welcome 👋 
 Welcome to the DAO Adventure a course designed to teach you how to create a **DAO** (Decentralized Autonomous Organization) from scratch on the **Internet Computer** platform, with the **Motoko** programming language.
 
@@ -30,10 +29,20 @@ No prior experience with Web3, the Internet Computer, Motoko, or DAOs is require
 > For those who are new to coding, we encourage you to participate. The course is designed to be accessible to beginners, and we will provide all the necessary resources and support to help you successfully complete the course.
 
 ## Coding Environment 🛠️
+We recommend to use our online development environment to complete the course. Get started with just one click 👇
 
-If you want to skip the [local installation process](s), you can use our online development environment to complete the course.
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#http://github.com/motoko-bootcamp/dao-adventure)
 
-> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/motoko-bootcamp/dao-adventure)
+> Facing issues when setting up the workspace? 
+
+1. Deactivate your browser extensions. For instance, we've identified the [Plug wallet](https://twitter.com/plug_wallet) extension as causing issues.
+2. Switch to the **Incognito Mode**.
+3. Switch to another browser (Chrome is recommended)
+4. Empty your cache and refresh the page.
+5. Reach out directly on our [feedback channel](https://discord.gg/vTcwUdUwTf).
+
+> Prefer to work locally? 
+Read our [local setup guide](https://nnri3-7qaaa-aaaaj-qa3qa-cai.icp0.io/dao_adventure/qualification/local_setup.html).
 
 ## Deploying a canister 🚀
 To deploy a canister simply run the following command in your terminal: 
@@ -54,10 +63,12 @@ The course is organized into 7 distinct sections, comprising 5 main chapters, a 
 | [Chapter 5](./src/chapters/chapter_5/challenge/main.mo)         | Build your brand           | Build a webpage and develop a branding for your dApp                                                            |
 | [Graduation](./src/chapters/graduation)       | Graduation                 | Have you followed the course? It's time to graduate and submit your final project.                              |                                   |
 
+Access the course [here](https://nnri3-7qaaa-aaaaj-qa3qa-cai.icp0.io/index.html)
+
 ## Playlist 🍿
 To help you with the course, we have created a playlist with all the videos you need to complete the course - it also contains additional resources and tutorials about Motoko, the Internet Computer, and DAOs. <br/>
 
-You can access the playlist [here](https://www.youtube.com/playlist?list=PLl8VueN-2q18cOvhb1pDPPAUbUHY9z-CU)
+Access the playlist [here](https://www.youtube.com/playlist?list=PLl8VueN-2q18cOvhb1pDPPAUbUHY9z-CU)
 
 ## Credits 
 Written by [seb_icp](https://twitter.com/seb_icp/) with the support from [Code & State](https://twitter.com/codeandstate). 
