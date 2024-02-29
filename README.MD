@@ -31,7 +31,7 @@ No prior experience with Web3, the Internet Computer, Motoko, or DAOs is require
 ## Coding Environment 🛠️
 We recommend to use our online development environment to complete the course. Get started with just one click 👇
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#http://github.com/motoko-bootcamp/dao-adventure)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/motoko-bootcamp/dao-adventure)
 
 > Facing issues when setting up the workspace? 
 
