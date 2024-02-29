@@ -1,4 +1,4 @@
-actor {
+actor MotivationLetter {
 
     // Task #1:
     // Define an immutable variable `name` of type `Text`.
