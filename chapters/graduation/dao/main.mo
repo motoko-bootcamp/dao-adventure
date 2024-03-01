@@ -58,8 +58,8 @@ actor {
 
         // Create a new proposal and returns its id
         // Returns an error if the caller is not a mentor or doesn't own at least 1 MBC token
-        public shared ({ caller }) func createProposal(content : ProposalContent) : async Result<Text, Text> {
-                return #ok("To be implemented");
+        public shared ({ caller }) func createProposal(content : ProposalContent) : async Result<ProposalId, Text> {
+                return #err("Not implemented");
         };
 
         // Get the proposal with the given id
