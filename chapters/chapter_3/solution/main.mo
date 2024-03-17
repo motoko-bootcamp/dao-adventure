@@ -38,6 +38,9 @@ actor {
     };
 
     public shared ({ caller }) func transfer(from : Principal, to : Principal, amount : Nat) : async Result<(), Text> {
+        if (from == to) {
+            return #err("Cannot transfer to self");
+        };
         let balanceFrom = Option.get(ledger.get(from), 0);
         let balanceTo = Option.get(ledger.get(to), 0);
         if (balanceFrom < amount) {

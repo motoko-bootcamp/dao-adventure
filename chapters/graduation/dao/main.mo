@@ -39,7 +39,7 @@ actor {
         // Airdrop 10 MBC tokens to the new member
         // New members are always Student
         // Returns an error if the member already exists
-        public shared ({ caller }) func registerMember(name : Text) : async Result<(), Text> {
+        public shared ({ caller }) func registerMember(member : Member) : async Result<(), Text> {
                 return #err("Not implemented");
         };
 
